@@ -1,0 +1,12 @@
+{
+  "name": "courses",
+  "owner": { "name": "Martin" },
+  "description": "Courses where you learn AI-native work by doing it with Claude Code on your own business.",
+  "plugins": [
+    {
+      "name": "course",
+      "source": "./plugins/course",
+      "description": "Build a company brain for your business: set up the folder where your business's knowledge lives, so Claude Code knows your business without you explaining it."
+    }
+  ]
+}
