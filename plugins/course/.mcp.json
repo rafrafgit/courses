@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "sample": {
-      "command": "${CLAUDE_PLUGIN_ROOT}/bin/sample-tools-macos",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/content/sample"]
-    }
-  }
-}
