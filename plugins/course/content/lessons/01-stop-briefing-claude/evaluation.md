@@ -2,74 +2,73 @@
 
 For the reviewer only. It collects the evidence itself and judges it. The learner and the teaching agent never see this file.
 
-**What this lesson tests:** the brain's core, drafted by the agent from the learner's own material and completed by the learner: what's always true about their business (`company.md`, `offer.md`, with every gap filled), which calls they keep, and whether the agent asks first or marks what's theirs (`CLAUDE.md`). The material is the learner's own business: there are no known answers. You never judge the business, or whether their facts are true; you judge whether the files hold these choices, specifically enough to work.
+**What this lesson tests:** that the learner has given the agent their business, deciding what's true from the drafts the agent made from their material, and named the calls that are theirs, so a new session can work from the brain without a briefing. On the learner's own material: there are no known answers.
 
-**Judge on the right version:** the three files as they are now.
+**Judge on the right version:** the files as they are when the review runs, at the end of Step 3. Step 4's run comes after the review and is never judged.
 
 ## Evidence to collect
 
-The reviewer collects these and writes them, word for word, to the attempt's `evidence.md`. It never summarises, corrects or improves anything.
+The reviewer collects these for the review and writes them, word for word, to the attempt's `evidence.md`. It never summarises, corrects or improves anything.
 
-**Review:** at the end of Step 2: every must-have.
+**Review:** at the end of Step 3: every must-have.
 
-Every item is a file in the workspace. Never read the session history, and never judge what the learner typed or a reply in the conversation. A requirement the mentor wrote is never judged (P8): if something fails because one wasn't followed, note it in `evidence.md` for the course's authors.
+Every item is a file in the workspace. **Never open or quote a file in `inbox/` or `private/`:** they hold the learner's documents and clients' details, and aren't judged. Never read the session history, and never judge what the learner typed in the conversation or a reply there. A requirement the mentor wrote (the page shape, the citations, the timeline, the index, the log, and keeping one client's terms out of the summaries unless the learner's answer makes them general) is never judged (P8): if something fails because one wasn't followed, note it in `evidence.md` for the course's authors.
 
-- **E1 — `company.md`** in the workspace root. Quote the summary lines that decide M1, including any open mark. If it's missing, judge M1 on `offer.md` alone, and note it.
-- **E2 — `offer.md`** in the workspace root. Quote the summary lines that decide M1, including any open mark.
-- **E3 — `CLAUDE.md`** in the workspace root. Quote only the learner's lines under **Calls that are mine** and **At a gap**; the map and rules come with the course and are never judged. A section that still reads "(Not set yet…)" is empty.
+- **E1 — `company.md`:** the frontmatter, the whole summary above `## Timeline`, and the timeline's entries. If it's missing, M1 fails.
+- **E2 — `offer.md`:** the same. If it's missing, M1 fails.
+- **E3 — `CLAUDE.md`:** the section for the calls the agent brings back (it replaced "(Not set yet…)"), word for word. If it still reads "(Not set yet…)", that's the course's error, not the learner's (the mentor writes their answer): note it for the authors, and the verdict is Not yet on this point only, worded as the course's error.
 
-Read each by its exact path. Judge the summary above each page's `## Timeline`; frontmatter, sources and timeline entries are the mentor's. Don't open `inbox/`: what came in is the learner's material, not their work. If all three files are missing, say the brain's pages weren't written, and nothing else.
-
-There are no questions for the learner in this lesson.
+When asking the learner questions: this review asks none.
 
 ## Must-haves
 
-**The truths:** none (the learner's own business). **On anyone's business, the files must show:** facts that hold until the learner changes them, with no gap left open and no client named; kinds of call recognisable when a new one comes; and the ask-or-mark choice. The run in Step 3 isn't judged: its reply stays in the conversation.
+**On the learner's own material, the files must show:**
+- the business as facts that hold until the learner changes them, with no gap left open;
+- kinds of call recognisable when a new one comes.
 
-You can't know whether the learner's facts are true or their calls wise. You judge that they're there, specific, and complete.
+You can't know whether the facts are true, or whether the learner read each draft before saying yes. You judge whether the summaries state what the lesson asks, specifically, and whether the calls are the learner's specific words. **The calls (M2) are what tells learners apart:** no document holds them, so only the learner can have put them there. M1 can be met largely from good material, which is fine: it checks that what's in the brain is the business, specific, and stays true.
 
-**One rule for M1:** a fact belongs if it holds until the learner changes it (a price, an offer, a goal with its date, a launch they've decided, a standing rule such as "receipts by the 5th"); it doesn't if it changes because of what happens (bookings, availability, an unpaid invoice, an open enquiry, a project's status).
+### M1 — The business, with no gap left open
+- **Passes if:** the summaries of `company.md` and `offer.md` (above `## Timeline`), between them, state:
+  - what the learner sells;
+  - to whom;
+  - at what price: a price, a range, or how they price ("by the project, quoted after a call"; "not set yet; aiming at about €90 a session");
+  - how the work is done (where, how, how long, what the client gets or does).
 
-### M1 — What's always true, complete
-- **Passes if:** the summaries of `company.md` and `offer.md` (above `## Timeline`), between them, state what the learner sells, to whom, at what price (a price, a range, or how they price: "not set yet" with what it depends on, "a quote per project after a free call", "sliding scale") and how the work is done (where, how it's delivered or paced, not who it's for); hold no open gap (no `[ASK`, "TBD" or "?" where a fact should be); name no client; and hold nothing that changes on its own, by the rule above.
-- **Fails if:** any of the four is missing from both, a gap is open, a client is named, or something changes on its own.
+  And no `[ASK` remains in either summary.
+- **Fails if:** any of the four is missing or only gestured at ("great service", "competitive prices"); an `[ASK` remains in a summary; or a summary states something that changes on its own as a standing fact (this month's bookings, a client's open invoice, "currently booked until March").
 - **Borderline:**
-  - "Prices: not set yet; aiming at about €90 a session": passes. "Sliding scale" alone: how they price; passes.
-  - "Booked up until February": availability; fails. "Now booking 2027 weddings": a decision to open dates, held until they change it; passes.
-  - "Launching a course in March", "50 clients by the end of 2027": plans they decided; pass. "Over 200 happy clients", "4 monthly retainers": counts that move with the business; fail (feedback: say it without the number, or leave it out).
-  - "Invoices due in 14 days; receipts by the 5th": standing rules; pass.
-  - "I work with small businesses" as the only line on how they work: that's to whom; fails.
-  - An `[ASK` only in a timeline entry, not the summary: passes (note it for the authors).
-  - "Clients include Hartley & Sons Ltd": a client named; fails (feedback: take the name out).
-  - A price drafted from a past proposal as "the price": you can't tell whether they confirmed it; passes; note it for the authors.
-- **Feedback on fail:** name what's missing, open, named or changing, and ask the one question that settles it ("Who buys from you?", "Will this still be true next month without you changing it?"). Never suggest the answer.
+  - "Prices: not set yet; aiming at about €90 a session": **passes.** It's how they price, stated honestly.
+  - "Now booking for spring": **passes.** It's how the work is scheduled, not a count that moves.
+  - "Three clients this month": **fails.** That's a count that changes on its own.
+  - An `[ASK` in the timeline only: **passes.** The timeline is the mentor's record; only the summaries are judged.
+  - "Priced per engagement, each one different": **passes** only if it says how a price is reached ("quoted after a call, by scope and days"); **fails** if that's all it says.
+  - "Fully booked until March; waitlist open", stated on purpose: **fails.** It changes on its own; the feedback says it belongs in a dated note, brought in when it changes.
+- **Feedback on fail:** name which of the four is missing or vague, or which line will be out of date next week, and say to give the mentor what's true now, so the page can be updated.
 
-### M2 — The calls they keep, recognisably
-- **Passes if:** `CLAUDE.md`'s **Calls that are mine** names kinds of call the agent brings back instead of making, each specific enough that you could tell whether a given call is one (dates and deadlines, discounts, anything not on the price list, saying no to someone, refunds).
-- **Fails if:** the section is empty or "(Not set yet…)", or holds only vague kinds ("anything important", "big decisions", "anything I'd want to know about").
-- **Borderline:** one kind only ("any refund"): specific; passes. "Anything about money", "anything with a new client": you can tell whether a call is one; pass. "Big decisions": you can't; fails. Calls written elsewhere in `CLAUDE.md`, not under the heading: judge them where they are and note it for the authors.
-- **Feedback on fail:** "Which kinds of call would you want back before anything goes out?"
-
-### M3 — Ask first, or finish and mark it
-- **The decision:** when the work reaches something that's the learner's (a call they keep, or a fact the brain doesn't have), does the agent ask first, or finish the rest and mark it? **Ask first** looks like this in a run: the first reply ends waiting on the learner's answer about that part. **Mark it:** the first reply presents the work as done, with that part left as `[ASK: …]`. Either passes.
-- **Passes if:** `CLAUDE.md`'s **At a gap** states one of the two, or when each applies, in a way you could apply ("ask me if it's a price, otherwise mark it"). "Ask me first unless it's small": you couldn't tell what's small; fails, with the feedback below.
-- **Fails if:** the section is empty or "(Not set yet…)", or states both without saying when each applies.
-- **Borderline:** the line covers kept calls but not facts the brain lacks: it still states the choice; passes (covering both is the mentor's requirement; note it for the authors).
-- **Feedback on fail:** "What should I do when the work gets to something that's yours: stop and ask, or carry on and leave it marked for you?" Never say which is better.
+### M2 — The calls that are yours
+- **Passes if:** `CLAUDE.md`'s calls section names at least one kind of call specific enough that someone could tell whether a new situation is one ("any price not on my price list"; "taking on a client outside small businesses"; "agreeing a deadline I haven't given").
+- **Fails if:** it names only things too vague to apply ("anything important", "big decisions", "unless it's small" with no measure); or it lists facts rather than calls ("my price is €90").
+- **Borderline:**
+  - "Anything to do with money": **passes** if the section, or the pages, make "money" clear (prices, discounts, refunds); **fails** if it's the only line and could cover anything.
+  - "Anything involving a new client": **passes.** A new client is recognisable.
+  - "Anything that matters to the client": **fails.** It's not recognisable.
+  - "Anything to do with money, and anything with a new client": **passes.** The second line alone is specific.
+- **Feedback on fail:** ask which decision they'd want back before anything goes out, and say to name it as a kind, so the agent recognises one it hasn't seen.
 
 ## Nice-to-haves
 
-These never affect the verdict. Mention at most two, the ones the learner could most easily act on.
+These never affect the verdict. Mention at most two in the feedback, the ones the learner could most easily act on.
 
-- **N1:** each kept call says what the learner wants brought with it (the options, the cost, who's waiting).
-- **N2:** `company.md` says where the business is going: a goal and by when.
+- **N1:** each call says what they want brought with it (the options, what it would cost, who's waiting).
+- **N2:** the brain says where the business is going: a goal, and by when.
 
 ## Verdict and feedback
 
 The learner reads the result as it is, in the terminal (the `evaluator` agent's format).
 - **Passed** only if every must-have is met.
-- **One line per must-have covered:** ✓ or ✗ and its short learner-facing name. Never evidence codes (E1, M3): say "your offer page", "your company page", "your `CLAUDE.md`".
-- **Never judge the business.** For each unmet must-have, name the kind of gap and one next step, quoting the learner's own file if useful. Don't write their answer for them. Don't soften a fail into "almost".
+- **One line per must-have covered:** ✓ or ✗ and its short learner-facing name. Never evidence codes (E1, M2): name the learner's own work ("your pages", "your command", "the run").
+- **Never give the answer.** For each unmet must-have, name the kind of gap and one next step, quoting the learner's own words or output if useful. On a sample, never name the planted item (who sent what, when, which meeting); on the learner's own material, never write what's true about their business or which calls are theirs. Don't soften a fail into "almost".
 - **Passed:** two or three sentences on what's specifically good, and at most two nice-to-haves. Under 200 words in all.
 - **Earlier reviews:** read their results first. Say whether each earlier point was acted on.
 - **Tone:** a senior colleague in the learner's field. Direct, specific, no praise padding, no exclamation marks.

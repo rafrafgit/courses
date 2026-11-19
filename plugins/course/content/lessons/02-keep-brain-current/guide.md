@@ -2,96 +2,127 @@
 
 For the course guide (the `lesson` skill). The learner never sees this file. It says what to check at each step and when to move on.
 
-The steps are the `## Step` sections of `lesson.md`: 1 Bring in your change, 2 Settle what disagrees, 3 Ask for work that uses the change.
+The steps are the `## Step` sections of `lesson.md`: 1 Bring in your change, 2 Bring in a client, and settle what disagrees, 3 Check your brain, 4 Ask for work that uses what's new.
 
-Support in this lesson (P4): name each decision and say its "tell them first" line, neutrally, when you ask it; no contrast from another situation and no example answer. Wait for the learner's own words; if they're vague, one question that makes them more specific, never a verdict. Never a sentence to copy.
-
-`/bring-in` is the brain's own skill (`.claude/skills/bring-in/SKILL.md`): when the learner types it, follow it as written, with this guide's decisions and checks on top.
+**Support** (P4): name each decision and say its "tell them first", with no contrast from another situation and no example answer. Wait for their own words; one question to make them more specific is fine.
 
 ## Step 1 — Bring in your change
 
-**Moves on when:** the change is filed (in `inbox/`, logged, the pages it touches updated with the learner's yes), and the decision question is answered.
+**Moves on when:** the change is filed, each change to a page that says what the business is has been answered at the prompt, and the decision question is answered.
 
-**Decisions** (the learner's; one at a time, in this order, never propose):
-- **What changed, and from when** (the lesson's ask).
-  - **Tell them first** (if their note has no when): a change with no date leaves the brain unable to tell the old version from the new; a coming change keeps both, each with its dates, until it takes effect.
-- **Each change to a page that says what the business is,** at Claude Code's prompt: yes, no, or what's true instead.
-  - **Tell them first** (before the first prompt): the old version isn't deleted; it stays in the page's timeline, dated, so you can see what changed and when.
-- **Whether the change is a decision, and if so why.**
-  - **Tell them first:** a decision is never edited, a new one replaces it, and what's easily undone isn't one; either answer is fine; a decision is kept with its why, in your words.
-  - If yes, ask why, in their words. If they'd rather skip it, say once that a decision without its why can't be weighed again later; then write what they said.
+**Decisions** (one at a time, in this order, never propose):
+- What changed, and from when (asked in the lesson text).
+  - **Tell them first:** a change with no date leaves the brain unable to tell the old version from the new; a coming change keeps both, each with its dates, until it takes effect.
+- Each change to a page that says what the business is: yes, no, or what's true instead.
+  - **Tell them first:** the old version isn't deleted; it stays in the page's timeline, dated.
+- Whether the change is a decision, and if so why.
+  - **Tell them first:** a decision is never edited, a new one replaces it, and what's easily undone isn't one; either answer is fine.
+
+**After:** once the change is filed.
+
+**Check:**
+- `inbox/<date>-change.md` saved as typed, with a `filed (change)` line in `log.md` listing the pages touched.
+- The touched pages' summaries say the new version with when it applies, with no `[ASK]` left; their timelines keep the old one, dated.
+- A decision file, if they called it one, with **Context**, **Decision** and **Why**, the why in their words.
+
+**Stay on this step if:**
+- The change replaces nothing the brain says: bring it in as an ordinary note, and ask for one that does.
+- An `[ASK]` remains in a touched summary (M3 covers these pages too).
+- "You decide" on the decision question: it's theirs; ask again.
+- They called it a decision but gave no why: a decision without its why can't be revisited; ask once more, then write what they said.
 
 **Stated, not asked:**
-- Save the change as typed to `inbox/<today>-change.md` (`-change-2.md` for a second that day), as `/bring-in` says. Show the plan (each page it touches, the change, the source, and whether you write it or they approve it), as `/bring-in` says.
-- Write what you may write alone (a note in `notes/`; timeline entries on draft pages). For each change to `company.md`, `offer.md`, `voice.md` or a decision, say the change and its source in one line, then write it, so Claude Code asks. On "No", ask what's true, save it with the answers in `inbox/`, and write that.
-- Keep the old claim in the page's timeline, dated, citing the change file. A coming change: the summary keeps both, each with its dates ("£180 until 31 December; £200 from 1 January 2027").
-- A decision: `decisions/<today>-<slug>.md` with frontmatter (`type: decision`, `status: active`, `decided`, `owner`), and **Context**, **Decision**, **Why**, the why in their words; written at the prompt.
-- Log `filed (change)` for the change file and `(approved)` on what they said yes to; update `index.md`; commit if the folder has a `.git` folder.
-- Then show the step's `<!-- after -->` part.
+- `/bring-in` runs as the scaffold's skill says: a plan first; the writes it may make alone go ahead; each change to `company.md`, `offer.md`, `voice.md` or a decision is said in a line with its source, then written, so Claude Code asks (T13).
+- A coming change sits in the summary with both versions and their dates.
+- Where git is installed, show once that "undo that" brings a page back; without git, say in one line that `log.md` keeps the record.
+- A decision file: `decisions/YYYY-MM-DD-<slug>.md`, frontmatter `type: decision`, `status: active`, `decided`, `owner`. Until the review passes, it can still be completed; after that, a new one replaces it.
+
+**Don't:** say whether the change or the decision is wise; word the why for them.
+
+**Review:** none.
+
+## Step 2 — Bring in a client, and settle what disagrees
+
+**Moves on when:** the client's material is filed, and every disagreement and gap in the pages it touched is settled.
+
+**Decisions:**
+- Which version wins, wherever the material disagrees with the brain or with itself.
+  - **Tell them first:** I show you both, with where each came from, and never choose; one client's arrangement can stay theirs, or become your rule; it's your call; and if you don't know something yet, "not known yet" is a fine answer.
+- What's private beyond contact details, only if the material holds something they might not want quoted.
+  - **Tell them first:** I still read what's in `private/` when I work; it keeps things out of the pages, not out of what I read.
+
+**After:** once the client's material is filed.
 
 **Check:**
-- `inbox/<today>-change.md` exists and `log.md` files it as the change.
-- The page it touches says the new version (both, dated, for a coming change); the old one is in its timeline.
-- The decision question was answered; a decision file exists if they said yes.
+- The material in `inbox/`, or in `private/` if it holds contact details, with a `filed` line listing the pages it touched.
+- A page in `customers/` for the client (or prospect, or kind of client), as a draft with a sourced timeline, with no contact details.
+- No `[ASK]` left in the summaries of the pages touched.
 
 **Stay on this step if:**
-- The change replaces nothing the brain says: bring it in as an ordinary note (`inbox/<today>-<topic>.md`), and ask for one that does, which becomes the change.
-- They say "you decide" on the decision question: it's theirs; ask again.
+- An `[ASK]` remains in a touched summary (M3).
+- Contact details headed for `inbox/` or a page: stop, and keep them in `private/`.
 
-**Don't:** suggest a date, call it a decision for them, or word the why.
-
-**Review:** none here; it runs after Step 2.
-
-## Step 2 — Settle what disagrees
-
-**Moves on when:** the material is filed, every disagreement it raised is settled, the further-pages answer is written, and the review has passed.
-
-**Decisions** (the learner's; one at a time, in this order, never propose):
-- **What comes in** (the lesson's ask): a document, or a note in their words on something the brain already covers.
-- **Which version wins,** for each place the material disagrees with the brain or with itself.
-  - **Tell them first** (before the first disagreement): where they disagree, I show you both, with where each came from, and never choose; a change you tell me is your decision, and I apply it to the pages in the plan I show you first.
-- **What's private,** only if the material holds something they might not want quoted (costs, margins, a personal matter).
-  - **Tell them first:** `private/` is for what I may read and never quote; keeping something out of the brain limits what's stored and reread, not what I read once.
-- **(Open decision)** Beyond the pages that say what the business is, which pages should I change only with their yes, if any?
-  - **Tell them first:** a yes on more pages keeps more in your hands and costs a prompt each time; leaving them to me means I keep them as drafts and you check them when you choose.
-  - Naming pages, a kind of page, or "none" is their choice. Only "you choose" isn't: say it's theirs, and ask again. If what they name can't be mapped to pages ("the important ones"), ask which pages they mean.
+**If it doesn't happen:** no document: the note path, typed. A learner who typed in Lesson 1 and now brings a document: getting it in is taught here: they say where it is; before the first read outside the folder, say to choose "Yes, but ask again next time" (T18); a Word file gets a text copy (research's M4); a Google Doc is printed to PDF (T19). The material agrees with the brain everywhere: nothing to settle; say so.
 
 **Stated, not asked:**
-- **A document,** as Lesson 1: before the first read outside the folder, say Claude Code will ask, and to choose "Yes, but ask again next time" (never "No, and block…"); read it where it is; copy it into `inbox/` as it is; a Word file gets a text copy (`textutil -convert txt -output inbox/<name>.docx.md inbox/<name>.docx`); a Google Doc is printed to PDF first (File, Print, Save as PDF); a file you can't read: they type its key lines. For a learner who typed in Lesson 1, say this once, plainly, before they name a document.
-- **A note** is saved as typed to `inbox/<today>-<topic>.md`.
-- **A client's name** in a document or note: stop before copying or saving; they pick another, restate it, or bring a copy without.
-- **Filing** follows `/bring-in` and `CLAUDE.md`'s drafting rule: new pages as drafts with sourced timelines (a segment in `customers/`, never a named person; a note in `notes/`); every disagreement, gap and one-off fact marked `[ASK: …]` and shown with both sources; never choose. Their answers saved as typed with the answers in `inbox/` and cited. Changes to `company.md`, `offer.md` or `voice.md` at the prompt.
-- **The further-pages answer:** replace the "(Not set yet…)" line under **Pages I approve** in `CLAUDE.md` with their words (add the section after **Who decides** if it's missing); add a matching `Edit(/<folder>/**)` or `Edit(/<page>.md)` rule to the `ask` list in `.claude/settings.json` for each page or folder they name; "none" adds no rule. Both files have ask rules, so Claude Code asks before each write (T13).
-- Log each file (`filed`, `(approved)`), update `index.md`, commit if the folder has a `.git` folder. Then show the step's `<!-- after -->` part.
+- The client's page: `customers/<name>.md`, the page shape, `status: draft`; who they are, what the work or enquiry is, and its terms, each sourced; the page cites the `private/` document, never its contact details. A prospect or a kind of client gets a page the same way.
+- One client's terms go on that client's page, and onto the business's pages only as their answer says. Answers are saved as typed to `inbox/<date>-answers.md` and cited; "not known yet" is written as unknown and removes the marker.
+
+**Don't:** choose a version, or say whether an exception should become their rule.
+
+**Review:** none.
+
+## Step 3 — Check your brain
+
+**Moves on when:** every finding is logged with its outcome (or "nothing found" is logged), the verified pages are set, and **Pages I approve** holds their answer. Then the review runs, and the step moves on only on "Passed".
+
+**Decisions** (in this order):
+- Each finding: what's true, or that it stays as it is and why.
+  - **Tell them first:** a finding isn't always wrong; if it stays, say why.
+- Which pages they've checked as a whole.
+  - **Tell them first:** a verified page is one you've read through; after it, I don't rewrite its summary without your yes.
+- **(Open decision)** Beyond the pages that say what your business is, which pages should I change only with your yes, if any?
+  - **Tell them first:** a yes on more pages keeps more in your hands and costs a prompt each time; leaving them to me means I keep them as drafts, and you check them when you choose, with `/check-brain`. Naming pages, a kind of page, or "none" is their choice.
+
+**After:** once all three are done.
 
 **Check:**
-- The material is in `inbox/` with a `filed` line.
-- No summary of a page touched in this lesson holds `[ASK`, "TBD" or "?".
-- `CLAUDE.md` has **Pages I approve** with their words; the settings rule matches.
+- A `check-brain` line in `log.md` for each finding with its outcome and reason as they gave them, or one line saying nothing was found.
+- The pages they named marked `status: verified`, after their yes in the conversation (verified pages have no ask rule of their own; `CLAUDE.md` holds the rule that their summaries change only with a yes).
+- **Pages I approve** in `CLAUDE.md` holds their answer, replacing "(Not set yet…)"; a matching `Edit(…)` ask rule in `.claude/settings.json` for each page or folder named (T13); "none" adds nothing.
 
 **Stay on this step if:**
-- The note touches nothing the brain already says: ask what it changes or confirms there.
-- A disagreement is still open.
+- A finding has no logged outcome yet: the review reads them.
+- "You choose" on the open decision: it's theirs; say again what each costs, and wait.
+- An answer no one could match to a page ("the important ones"): ask which page, or kind of page.
+- "Verify them all": ask which they've actually read through; a page they haven't read stays a draft.
 
-**Don't:** settle a disagreement, suggest which version is current, propose pages to approve, or say whether "none" is wise.
+**If it doesn't happen:** nothing found (a young brain): say so; the log line records it; ask which pages they've checked anyway.
 
-**Review:** every must-have (lesson skill, `review.md`), on the brain's files, once this step's check passes. Move on to Step 3 only on "Passed". After a "Not yet", the learner changes what it names (you write it, at the prompt where it's a page that says what the business is), and you have it checked again.
+**Stated, not asked:** `/check-brain` runs as the scaffold's skill says. Lesson 1's material has its `filed` lines, so it isn't reported as not brought in.
 
-## Step 3 — Ask for work that uses the change
+**Don't:** settle a finding for them, propose which pages to verify, or say which answer to the open decision is better.
 
-**On return:** the learner comes back with `/course:lesson`, usually in the run's session. Show the step's text from "Nothing here is graded". If the run isn't in this conversation, ask what they noticed. If they come back before the work arrived, ask them to finish the run first.
+**Review:** every must-have (M1–M5), following `review.md`. It asks the learner nothing.
 
-**Moves on when:** the learner has said which version the run used and whether that's right for when the work is for. Then tell them what to have for Lesson 3, in your words: one piece of writing they do again and again that needs no client's details, with at least three real pieces of it to run on, past ones counting. Then the lesson is passed: show "You can now", then "Next".
+## Step 4 — Ask for work that uses what's new
 
-**Decisions:** none.
+**On return:** show the step's text from "Nothing here is graded" (the line after the command block).
+
+**Moves on when:** they've said which version and pages it used, and whether that's right for when the work is for.
+
+**Decisions:** none new.
 
 **Check:**
-- They restarted and asked in one line, as the session's first message (as they tell you, or from this conversation), and have said what they noticed.
+- A file in `work/other/` newer than the last change to the brain.
+- Their account, in their own words.
 
 **Stay on this step if:**
-- The run was in the old session, after `/clear`, not the first message, or with background added: they restart and ask again.
-- **The run used the old version where the new one applies, or named no page:** say, in a line, what `CLAUDE.md` told it to read. They restart and ask once more. If it misses again, show the page that holds the new version, and note it in `course-material/notes-for-authors.md`. Never graded.
+- They asked in the old session, after `/clear`, or with background: restart and ask again (T12).
+- Nothing saved in `work/other/`: say what `CLAUDE.md` asks of every piece of work, and have them run it again.
 
-**Don't:** say whether the version was right for the date: that's theirs to see, unless the run plainly ignored the brain (above).
+**If the run uses the old version, or names no page:** say what `CLAUDE.md` told it to read; they restart and ask once more; if it misses again, show the page that held the new version and note it in `course-material/notes-for-authors.md`. Never graded.
 
-**Review:** none. The lesson passes when Step 2's review has passed and this step's check passes.
+**Don't:** suggest the request, or judge the result for them.
+
+**Review:** none (the review ran at Step 3). The lesson passes when the review has passed and this step's check passes. Then "You can now" and "Next" (which says what to have for Lesson 3).

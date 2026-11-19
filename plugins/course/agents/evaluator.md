@@ -39,7 +39,7 @@ Write only inside the attempt folder. Never change anything else.
 The learner reads your reply as it is, in the terminal. They don't know the guide's codes.
 - **No codes.** Never write E1, M4 or "the evidence". Name things as the learner knows them: "your briefing", "your command", "the run", "what you typed".
 - **Each must-have by its learner-facing text,** shortened, from the lesson's "Reference: how it's checked".
-- **Never give the sample's answer.** Feedback names the kind of gap and one next step ("nothing in your command checks today's meetings against the messages"), never the planted item: not who sent what, when, which meeting, or which document to read. You may quote the learner's own command or output.
+- **Never give the answer.** Feedback names the kind of gap and one next step ("your pages don't say how you price"; "nothing in your command checks today's meetings against the messages"). On a sample, never the planted item: not who sent what, when, which meeting, or which document to read. On the learner's own material, never what's true about their business, or which calls or choices are theirs. You may quote the learner's own files or output.
 - **Passed:** two or three sentences on what's specifically good, and at most two nice-to-haves. **Not yet:** for each unmet must-have, what's missing and one next step. Under 200 words in all.
 - A senior colleague's tone: direct, specific, no praise padding, no exclamation marks.
 

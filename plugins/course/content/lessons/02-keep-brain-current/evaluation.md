@@ -2,72 +2,93 @@
 
 For the reviewer only. It collects the evidence itself and judges it. The learner and the teaching agent never see this file.
 
-**What this lesson tests:** keeping the brain current: a real change brought in with `/bring-in` and filed into the pages it touches, the old version kept; further material brought in with every disagreement settled; a decision recorded if the learner called the change one; and the learner's choice of which further pages need their yes. The material is the learner's own business: there are no known answers. You never judge the business or the change; you judge whether the brain holds them as this lesson asks.
+**What this lesson tests:** that the learner keeps the brain current. A real change goes in, with when it applies; a client's material is filed with every disagreement settled by them; which further pages need their yes is theirs; and what `/check-brain` found is settled. On the learner's own material: there are no known answers.
 
-**Judge on the right version:** the files as they are now.
+**Judge on the right version:** the files as they are when the review runs, at the end of Step 3. Step 4's run comes after the review and is never judged.
 
 ## Evidence to collect
 
-The reviewer collects these and writes them, word for word (or the lines that decide each must-have, for long files), to the attempt's `evidence.md`. It never summarises, corrects or improves anything.
+The reviewer collects these for the review and writes them, word for word, to the attempt's `evidence.md`. It never summarises, corrects or improves anything.
 
-**Review:** at the end of Step 2: every must-have.
+**Review:** at the end of Step 3: every must-have.
 
-Every item is a file in the workspace. Never read the session history, and never judge what the learner typed or a reply in the conversation. A requirement the mentor wrote is never judged (P8): if something fails because one wasn't followed, note it in `evidence.md` for the course's authors.
+Every item is a file in the workspace. **Never open or quote a file in `inbox/` or `private/`:** they hold the learner's documents and clients' details, and aren't judged. Never read the session history, and never judge what the learner typed in the conversation or a reply there. A requirement the mentor wrote (the plan, filing, the client page's draft, the page shape, the settings rule, the log and index format) is never judged (P8): if something fails because one wasn't followed, note it in `evidence.md` for the course's authors.
 
-- **E1 — `inbox/*-change.md`:** the change (the newest, if several). Quote it. If there's none, look for the `log.md` line marked `filed (change)`; if neither exists, M1 fails.
-- **E2 — `log.md`:** the lines that file the change and the further material: which pages each touched, and which changes were `(approved)`.
-- **E3 — the pages the log says the change and the material touched,** usually `offer.md` or `company.md`, plus any new page in `customers/` or `notes/`. Quote each summary (above `## Timeline`) and the timeline entries added in this lesson.
-- **E4 — `decisions/`:** every file dated in this lesson. If there's none, say so.
-- **E5 — `CLAUDE.md`:** the section **Pages I approve** only. Everything else in it is the course's or Lesson 1's.
+- **E1 — `log.md`:** every line, word for word. The `filed` lines name what came in and the pages it touched; the `check-brain` lines hold each finding and its outcome.
+- **E2 — the pages the change and the client's material touched:** for each page a `filed` line from this lesson lists (or, if a line doesn't list them, each page whose timeline cites the file it names), its frontmatter, its summary above `## Timeline`, and its timeline. These include the client's page in `customers/`.
+- **E3 — `decisions/`:** every file new in this lesson, word for word. None is fine if the learner didn't call the change a decision.
+- **E4 — `CLAUDE.md`:** the **Pages I approve** section, word for word.
 
-If `log.md` has no line from this lesson, find the newest `inbox/` files instead and note the missing log lines for the authors.
-
-There are no questions for the learner in this lesson.
+When asking the learner questions: this review asks none.
 
 ## Must-haves
 
-**The truths:** none (the learner's own business). **On anyone's business, the files must show:** the change in the pages it touches, the old version kept, dated; no disagreement left open; a decision with its why, if one was recorded; and the further-pages choice. The run in Step 3 isn't judged.
+**On the learner's own material, the files must show:**
+- the change in the pages it touches, with when it applies;
+- a decision with its why, if they called it one;
+- no disagreement left open in the pages touched;
+- their choice on which further pages need their yes;
+- each `/check-brain` finding settled.
 
-You can't know whether the change is real, whether it's wise, or whether the learner read each prompt. You judge that the brain holds it, specifically, and completely.
+You can't know whether the change is true, whether the right version won, or whether the learner read each prompt. You judge whether the brain records the change, the settlements and the choices specifically, and consistently with its own pages.
 
-### M1 — The change is in
-- **Passes if:** the change file states what changed and from when, or that it's already in effect; and a page it touches (per `log.md`) says the new version in its summary, with its date (a coming change: both versions, each with its dates).
-- **Fails if:** there's no change file; it doesn't say what changed, or gives no when and doesn't say it's in effect; or no touched page's summary shows the new version.
-- **Borderline:** "I'm dropping year-end accounts" (in effect now): passes. "Prices will go up at some point": no when; fails. A coming change whose summary shows only the new price, with no date: the summary is wrong for today; fails (feedback asks for both, with dates). The timeline entry keeping the old version is missing: that's the mentor's filing; pass M1, and note it for the authors. The change touched only a draft page: passes.
-- **Feedback on fail:** say which part is missing (the when, or the new version in the page), and the one step: "Add when it takes effect", or "Ask me to put the new version, with its date, on the page."
+### M1 — The change is in, dated
+- **Passes if:** the summary of a page the change touched states the new version with when it applies ("from 1 January 2027", "since March"), or that it's in effect now; a coming change shows both versions in the summary, each with its dates.
+- **Fails if:** the new version has no "when" ("€550 a day", with nothing saying since or from when); or a coming change shows only the new version, as if already in effect.
+- **Borderline:**
+  - "€550 a day (since this month)" with the month in the page's timeline: **passes.** The date is recoverable from the page.
+  - The change touched only a note in `notes/`, which dates it: **passes.**
+  - The old version missing from the timeline, or no `filed (change)` line: **not judged.** That's the mentor's filing; note it in `evidence.md` for the authors.
+- **Feedback on fail:** name the page, and say to tell the mentor when the new version applies.
 
-### M2 — A decision recorded with its why (only if one was recorded)
-- **Passes if:** there's no decision file from this lesson (the learner didn't call it one); or there is, and it says what was decided and gives a reason (a cost, a goal, a constraint, a preference: anything they could weigh again).
-- **Fails if:** a decision file from this lesson has no why, or a why that gives no reason ("it was time", "decided to").
-- **Borderline:** "my costs rose": a reason; passes. "to grow": a goal; passes. "I want more time with my kids": a reason; passes. "it wasn't profitable": a reason; passes. "it was time": no reason; fails.
-- **Feedback on fail:** "What made you decide this, that you'd want to remember if you reconsider it?" Never suggest the reason.
+### M2 — A decision, with its why
+- **Passes if:** `decisions/` has no file (they didn't call it one); or each new decision file states what was decided, and a why the learner could weigh again later (a reason, a cost, what it's meant to fix).
+- **Fails if:** a decision file has no why, or a why that's only the decision restated ("Decided to raise prices because prices are going up").
+- **Borderline:**
+  - "Because I want to": **fails.** There's nothing to weigh again.
+  - "To cover two rounds of edits I wasn't charging for": **passes.**
+- **Feedback on fail:** say the file needs a reason they could weigh again when they revisit it, and to give it to the mentor.
 
-### M3 — No disagreement left open
-- **Passes if:** no summary of a page touched in this lesson (per `log.md`) contains `[ASK`, "TBD" or "?" where a fact should be.
-- **Fails if:** any does.
-- **Borderline:** an `[ASK` only in a timeline entry: passes. The further material agreed with the brain everywhere, so nothing was raised: passes. An `[ASK` in a page this lesson didn't touch (left from Lesson 1): not this lesson's; passes, and mention it.
-- **Feedback on fail:** quote the open mark and ask for that one answer. Never suggest which version wins.
+### M3 — No question left open
+- **Passes if:** no summary of a page touched by the change or the client's material holds `[ASK`, "TBD" or a "?" standing for an open question. A summary that states something is unknown ("budget: not known yet") passes: that's an answer.
+- **Fails if:** any such marker remains in one of those summaries.
+- **Borderline:**
+  - An `[ASK` in a timeline entry only: **passes.** Timelines are the mentor's record.
+  - A question that is genuinely the page's content ("Asked: can we start in May?" on a prospect's page, as what they asked): **passes.** It's a record, not an open gap.
+  - The client's arrangement differs from `offer.md` and is stated on the client's page as theirs, with `offer.md` unchanged: **passes.** It's settled as an exception.
+- **Feedback on fail:** name the page and the open question, and say to tell the mentor which version is true.
 
-### M4 — Which further pages need their yes
-- **The decision:** beyond the pages that say what the business is, which pages does the agent change only with the learner's yes? **Some named:** later runs bring those pages to Claude Code's prompt. **None:** the agent keeps them as drafts. Either passes.
-- **Passes if:** `CLAUDE.md`'s **Pages I approve** names pages or a kind of page specific enough to tell whether a page is one ("the customer pages", "anything in notes/"), or says none.
-- **Fails if:** the section is missing or empty, or it says "you choose", or names something you can't map to pages ("the important ones").
-- **Borderline:** "customers": a folder; passes. "Only the root ones": the defaults, so none further; passes. Named pages but no matching rule in `.claude/settings.json`: the rule is the mentor's; passes, and note it for the authors. The answer written elsewhere in `CLAUDE.md`, not under the heading: judge it where it is and note it for the authors.
-- **Feedback on fail:** "Beyond the pages that say what your business is, which pages would you want to see before I change them, if any?" Never say which is better.
+### M4 — Which further pages need your yes (the open decision; Step 3)
+- **The decision:** beyond the pages that say what the business is, which pages does the agent change only with the learner's yes, if any? **Some named:** later changes to those pages come to Claude Code's prompt. **None:** the agent keeps them as drafts, and the learner checks with `/check-brain`. Either passes.
+- **Passes if:** **Pages I approve** names pages, a folder, or a kind of page recognisably ("my client pages", "anything in `decisions/`", "`notes/`"), or says plainly that none do.
+- **Fails if:** it's too vague to apply ("the important ones"). If it still reads "(Not set yet…)", that's the course's error (the mentor writes their answer): note it for the authors; Not yet on this point only, worded as the course's error.
+- **Borderline:**
+  - "Client pages, but only once a client has signed": **passes.** The condition is recognisable from the page.
+  - "Whatever matters": **fails.**
+- **Feedback on fail:** ask which pages they'd want to see before they change, named as a page or a kind of page, or "none". Never say which answer would have been better.
+
+### M5 — What `/check-brain` found has an outcome
+- **Passes if:** every finding line of the latest `/check-brain` run in `log.md` records an outcome: what the learner decided, or that it stays as it is with a reason. One line saying nothing was found also passes.
+- **Fails if:** a finding has no outcome, or one with no decision and no reason ("left for later", "skip", "stays").
+- **Borderline:**
+  - "Stays: I keep that summary short on purpose": **passes.** A reason is given.
+  - "Waiting on the client's reply about on-site days; decide after 3 December": **passes.** A decision to wait, with its reason and when.
+  - No `check-brain` line at all: **not the learner's fail.** The mentor should have stayed on Step 3 until the lines were there. Note it in `evidence.md` for the authors; the verdict is Not yet on this point only, worded as the course's error: the check's results weren't recorded, so the mentor runs it again with them.
+- **Feedback on fail:** name the finding, and say to decide it with the mentor: what's true, or why it stays.
 
 ## Nice-to-haves
 
-These never affect the verdict. Mention at most two, the ones the learner could most easily act on.
+These never affect the verdict. Mention at most two in the feedback, the ones the learner could most easily act on.
 
-- **N1:** a new customer page says who the segment is and what they buy, with no one named.
-- **N2:** something the learner wouldn't want quoted is in `private/`.
+- **N1:** the client's page says what the learner would want to remember before working with them again.
+- **N2:** something beyond contact details that the learner would rather not see quoted is in `private/`, and named in `log.md`.
 
 ## Verdict and feedback
 
 The learner reads the result as it is, in the terminal (the `evaluator` agent's format).
 - **Passed** only if every must-have is met.
-- **One line per must-have covered:** ✓ or ✗ and its short learner-facing name. Never evidence codes (E1, M4): say "your change", "your offer page", "your `CLAUDE.md`".
-- **Never judge the business.** For each unmet must-have, name the kind of gap and one next step, quoting the learner's own file if useful. Don't write their answer for them. Don't soften a fail into "almost".
+- **One line per must-have covered:** ✓ or ✗ and its short learner-facing name. Never evidence codes (E1, M2): name the learner's own work ("your pages", "your command", "the run").
+- **Never give the answer.** For each unmet must-have, name the kind of gap and one next step, quoting the learner's own words or output if useful. On a sample, never name the planted item (who sent what, when, which meeting); on the learner's own material, never write what's true about their business or which calls are theirs. Don't soften a fail into "almost".
 - **Passed:** two or three sentences on what's specifically good, and at most two nice-to-haves. Under 200 words in all.
 - **Earlier reviews:** read their results first. Say whether each earlier point was acted on.
 - **Tone:** a senior colleague in the learner's field. Direct, specific, no praise padding, no exclamation marks.

@@ -2,91 +2,112 @@
 
 For the course guide (the `lesson` skill). The learner never sees this file. It says what to check at each step and when to move on.
 
-The steps are the `## Step` sections of `lesson.md`: 1 Give me your business, 2 Tell me which calls are yours, 3 Ask for a piece of your work.
+The steps are the `## Step` sections of `lesson.md`: 1 Give me your business, 2 Bring in your proposals, and correct me, 3 Tell me which calls are yours, 4 Ask for a piece of your work.
 
-Support in this lesson is the course's most (P4): each decision's idea is taught as it's asked (in the lesson text or by you), with the stall-minder contrast and an example per decision. Wait for the learner's own attempt; help only after it, with one question that makes it more specific, never a verdict and never a sentence to copy.
-
-**Before Step 1:** the course's setup has put the brain's folders and files in place (its output says what it set up, and whether history is on with git). "Before we start" says what's there; add only whether history is on. Then show Step 1. Don't walk through the files, and don't call them a scaffold.
+Before Step 1, say in two lines what the setup put in the folder (the brain's folders, `work/` for what the work produces, `CLAUDE.md`'s map and rules, `index.md` and `log.md`, the `bring-in` and `check-brain` commands, `course-material/` for the course's own files), and that nothing in it says anything about their business yet.
 
 ## Step 1 — Give me your business
 
-**Moves on when:** `company.md` and `offer.md` are written with the learner's yes, with no `[ASK]` left in their summaries, and you've shown them.
+**Moves on when:** the drafts are shown, and the learner has answered the setting question in the step's "after" part.
 
-**Decisions** (the learner's; ask them one at a time, in this order, never propose; the first is the lesson's ask). Say each "tell them first" line when you ask it, then its example, from a piano teacher's brain, labelled as an example:
-- **What comes in:** typed, a document, or both (the lesson's ask).
-  - **Tell them first** (before they name a document, or as they start typing): anything in `inbox/` is kept as it came, so a document with a client's name or details stays out, or comes in as a Word or text copy with them taken out; keeping something out limits what's stored and reread, not what I read once.
-- **What's true:** for each `[ASK]` in the drafts, ask it, one at a time; then ask them to read each draft and say what's wrong.
-  - **Tell them first** (before the first gap): the brain holds what stays true until you change it; what changes because of what happens, like this week's bookings or an unpaid invoice, stays in the tool it lives in, or the brain is wrong by next week.
-  - **Example** (if they ask): "Piano lessons for adult beginners, £40 an hour, at my studio, weekday evenings; 30 adult pupils by next September" holds until they change it; "three slots free in March" changes on its own.
-- **Each page before it's written,** at Claude Code's prompt. (Taught in the lesson text; before the first write, just say the first prompt is coming.)
+**Decisions** (the learner's; ask them one at a time, in this order, never propose):
+- What comes in first: typed, a document that names no client, or both (asked in the lesson text, which says what to keep out).
+- Whether their chats may train models (asked in the "after" part).
+  - **Tell them first:** on Pro, Max and Ultra it's their setting; with it on, chats are kept 5 years, off 30 days; Team and Enterprise plans aren't trained on by default (T21). Then say the course recommends turning it off before client material comes in, and that the choice is theirs.
 
-If an answer is vague, ask one question that makes it more specific: "Will this still be true next month without you changing it?". If they say "just write it", say the facts are theirs and ask again, more simply ("What do you sell, and who buys it?"). Never offer options, never write a line they didn't say.
+**After:** once both drafts are shown in the terminal.
+
+**Check:**
+- What they gave is in `inbox/` (typed words as typed in `inbox/<date>-in-my-words.md`; a document copied as it came, a text copy beside a Word file).
+- Both drafts shown, each claim citing an `inbox/` file, each gap `[ASK: …]`, the four facts' places (what they sell, to whom, at what price or how they price, how they work) present and marked where the material is silent.
+
+**Stay on this step if:**
+- No draft has been shown yet.
 
 **Stated, not asked:**
-- **Getting a document in:** before the first read outside the folder, say: Claude Code will ask whether to allow reading outside this folder; choose "Yes, but ask again next time" (never "No, and block…", which blocks such reads for good). Read the document where it is, then copy it into `inbox/` as it is. A Word file: make a text copy beside it with `textutil -convert txt -output inbox/<name>.docx.md inbox/<name>.docx` (macOS), and read that. A file you can't read (a scan, an image-only PDF, a failed text copy): ask them to type its key lines instead. A Google Doc: they print it to PDF first (File, Print, Save as PDF). A client's name in a document: stop before copying; they pick another, or a copy without.
-- **Typed words** go to `inbox/<today>-in-my-words.md`, as typed. **Their gap answers and corrections** go to `inbox/<today>-answers.md`, as typed, before you write the page that uses them. Inbox files are never changed afterwards. A client's name in what they type: ask them to restate it without.
-- **The drafts:** `company.md` and `offer.md` in the page shape `CLAUDE.md` gives (frontmatter `type`, `status: draft`, `updated`, `sources`; summary; a dated `## Timeline` entry citing the inbox files), from `inbox/` only. Always give the four facts a place (what they sell, to whom, at what price or how they price, how they work) and mark `[ASK: …]` for each the material doesn't state. Mark `[ASK: …]` too for any other gap, any disagreement between sources, and any fact from a one-off document (one job's price). Never fill a gap or choose between sources yourself. Show both drafts before asking the gaps.
-- **Writing:** say each page's change and source in one line, then write it, so Claude Code asks. On "No", ask what's true, save it with the answers, and write that. If no prompt appears, say so, show the change, write it only after their yes in the conversation, and note it in `course-material/notes-for-authors.md`.
-- Update `index.md`, and add to `log.md` a `filed` line for each `inbox/` file and a line for each page written (`(approved)`); commit if the folder has a `.git` folder.
-- Show the two pages in the terminal, saying in a line what each does; then show the step's `<!-- after -->` part.
+- A document is read where it is (T17) and copied into `inbox/` as it came. Before the first read outside the folder, say: Claude Code will ask whether to allow it; choose "Yes, but ask again next time" (T18).
+- A Word file gets a text copy beside it (`<name>.docx.md`, with `textutil -convert txt -output <copy> <file>` on a Mac, M4); if that fails, they type its key lines. A Google Doc is printed to PDF first (T19); a Notion page exported to Markdown.
+- Drafts hold only what the material states; every gap `[ASK: …]`. Nothing is written to `company.md` or `offer.md` yet.
+
+**Don't:** fill a gap, word a fact for them, or choose the setting for them; recommend turning training off once, then leave it.
+
+**Review:** none.
+
+## Step 2 — Bring in your proposals, and correct me
+
+**Moves on when:** both pages are written after a yes at the prompt, and their summaries hold no `[ASK]`.
+
+**Decisions** (one at a time, in this order):
+- Which client documents come in, if any (asked in the lesson text).
+  - **Tell them first:** what comes in is kept, and is in the folder's history; I still read what's in `private/` when I work; it keeps things out of the pages, not out of the folder or out of what I read; anything under an NDA or told in confidence stays out.
+- What's true: each gap, one at a time, and each correction to the drafts.
+  - **Tell them first:** the brain holds what stays true until you change it; what changes because of what happens, like this week's bookings or an unpaid invoice, stays in its own tool, or the brain is wrong by next week.
+- Each page before it's written, at Claude Code's prompt.
+  - **Tell them first:** these files say what your business is, so the folder's rules make Claude Code ask before writing them, in any mode (T13); "No" with what's true instead is a fine answer.
 
 **Check:**
-- `inbox/` holds what came in; `company.md` and `offer.md` exist, cite it, and their summaries hold no `[ASK]`.
-- Each was written after a yes.
+- Client documents, if any, in `inbox/`, or in `private/` if they hold contact details.
+- `company.md` and `offer.md` written after a yes, in the page shape, their summaries with no `[ASK]`, each claim citing what it came from.
+- `inbox/<date>-answers.md` holds their answers and corrections as typed.
 
 **Stay on this step if:**
-- A gap is still open, or a choice holds only words you supplied.
-
-**Don't:** propose facts; fill a gap or settle a disagreement from what seems likely; judge whether a fact is wise.
-
-**Review:** none here; it runs after Step 2, on all three files.
-
-## Step 2 — Tell me which calls are yours
-
-**Moves on when:** `CLAUDE.md`'s two sections are written with the learner's yes, you've shown them, and the review has passed.
-
-**Decisions** (the learner's; ask them one at a time, in this order, never propose; the first is the lesson's ask, with its example from a piano teacher):
-- **Which calls are theirs:** the kinds of call you bring back instead of making (the lesson's ask).
-  - **Tell them first:** some answers change case by case, and no document can settle them. Name kinds of call, so I recognise one I haven't met.
-  - **Example:** "Any refund for a missed lesson; any lesson outside my hours" names kinds; "anything important" doesn't.
-- **(Open decision)** When the work reaches something that's theirs (a call they keep, or a fact the brain doesn't have): ask them first, or finish the rest and mark that part?
-  - **Tell them first:** asking first holds the work until you answer; marking gives you a whole draft now, with gaps you have to find and fill.
-  - **Example of each, shown together:** ask first, "Before I write this: do you take under-12s?"; mark it, the finished reply with "[ASK: do I take under-12s?]". Never say which suits them.
-  - Naming either, or when each applies in a way you could apply, is their choice. Only "you choose" isn't: say it's theirs, and ask again. If their rule can't be applied ("unless it's small"), ask what "small" means.
-
-If they say "you choose", say the choice is theirs and ask again, more simply ("Which calls would you want back before anything goes out?"). Never offer options, never write a line they didn't say.
+- An `[ASK]` remains in either summary (M1).
+- A page was written without the prompt: show what was written, ask for their yes, undo it if they say no, and note it in `course-material/notes-for-authors.md`.
 
 **Stated, not asked:**
-- **`CLAUDE.md`:** replace the "(Not set yet…)" lines under **Calls that are mine** and **At a gap** with the learner's words. The gap line always covers both a call they keep and a fact the brain doesn't have; "mark it" uses `[ASK: …]`.
-- Update `index.md` and `log.md` (`(approved)`); commit if the folder has a `.git` folder.
-- Show `CLAUDE.md`'s two sections in the terminal; then show the step's `<!-- after -->` part.
+- A document holding a client's contact details is copied as it came into `private/`, not `inbox/`; drafted from, never quoted.
+- Where sources disagree, or a fact comes from one client's job (a price in one proposal), mark it `[ASK]`; it goes into a summary only as their answer says, or as that client's.
+- Pages follow the pattern's shape: frontmatter `type`, `status: draft`, `updated`, `sources`; a summary; a dated `## Timeline` entry citing what they came from. No client's contact details on any page.
+- `index.md` and `log.md` updated: each file that came in, in this step or Step 1, gets its `filed <file> → <pages>` line, so `/check-brain` doesn't later report it as not brought in. Committed where git is installed.
+
+**Don't:** choose between sources, fill a gap from a guess, or word an answer for them; never say whether a fact is right.
+
+**Review:** none.
+
+## Step 3 — Tell me which calls are yours
+
+**Moves on when:** their calls are written into `CLAUDE.md` after a yes; then the review runs, and the step moves on only on "Passed".
+
+**Decisions:**
+- Which kinds of call are theirs (asked in the lesson text).
+  - **Tell them first:** some answers change case by case, and no document can settle them; name kinds of call, so I recognise one I haven't met.
+
+**After a "Not yet":** on the pages (M1), go back to Step 2's questions for what it names; on the calls (M2), ask the step's question again. Then the review runs again.
+
+**After:** once the calls are written.
 
 **Check:**
-- `CLAUDE.md`'s two sections hold the learner's words, written after a yes.
+- `CLAUDE.md`'s **Calls that are mine** holds their words, replacing "(Not set yet…)", written after a yes.
 
 **Stay on this step if:**
-- A choice is missing, or holds only words you supplied.
+- The section still reads "(Not set yet…)".
+- "You choose": the calls are theirs; ask again ("Which decisions would you want back before anything goes out?").
+- A rule that can't be applied ("unless it's small"): ask what "small" means.
 
-**Don't:** propose kinds of call, or recommend ask or mark; judge whether a choice is wise.
+**Stated, not asked:** the calls go under **Calls that are mine**, in their words; Claude Code asks before `CLAUDE.md` is written (T13).
 
-**Review:** every must-have (lesson skill, `review.md`), on `company.md`, `offer.md` and `CLAUDE.md`, once this step's check passes. Move on to Step 3 only on "Passed". After a "Not yet", the learner changes what it names (you write it, with Claude Code's prompt, saving their words with the answers), and you have it checked again.
+**Don't:** suggest a call, or say whether theirs are the right ones. One question to make theirs more specific is fine, after their attempt.
 
-## Step 3 — Ask for a piece of your work
+**Review:** every must-have (M1, M2), following `review.md`. It asks the learner nothing.
 
-**On return:** the learner comes back with `/course:lesson`, usually in the run's session. Show the step's text from "Nothing here is graded". If the run isn't in this conversation (they restarted again since), don't look for it: ask what they noticed. If they come back before the work arrived, ask them to finish the run first.
+## Step 4 — Ask for a piece of your work
 
-**Moves on when:** the learner has said, in their own words, what the run took from their pages, how it handled their call, and anything it got wrong. Then tell them what to have for Lesson 2, in your words: a note of one real change, recent or coming, that replaces something the brain now says (a price, what an offer includes, a way they work); and, if they like, one more document, with no client's details. Then the lesson is passed: show "You can now", then "Next".
+**On return:** show the step's text from "Nothing here is graded" (the line after the command block). If the run asked them something back instead of saving, have them answer it there, then come back.
 
-**Decisions:** none.
+**Moves on when:** they've told you what the run took from their pages, how it handled their call, and anything it got wrong.
+
+**Decisions:** none new. The request is theirs, unbriefed.
 
 **Check:**
-- The learner restarted and asked for a piece of their work as the first message (as they tell you, or from this conversation), and has said what they noticed.
+- A file in `work/other/` newer than the last change to the brain's pages and `CLAUDE.md` (the log and index change with every run; ignore them).
+- Their account, in their own words.
 
 **Stay on this step if:**
-- The run was in the old session, after `/clear`, not the session's first message, or with background added: they restart (`/exit`, `claude`) and ask again, as the first message, in one line.
-- The request touched none of their calls: the run still shows the pages at work; offer one more try with a request that does, if they want to see the call come back.
-- **The run didn't use the brain** (it names no page, makes a call instead of bringing it back, or brings it back the other way than they chose): say, in a line, what `CLAUDE.md` told it to read. They restart and ask once more. If it misses again, show which page holds what the run missed, and note the miss in `course-material/notes-for-authors.md`. Never graded.
+- They asked in the old session, after `/clear`, or with background, or changed the brain's pages after the run: they restart and ask again (T12).
+- Nothing saved in `work/other/`: say what `CLAUDE.md` asks of every piece of work, and have them run it again.
 
-**Don't:** say whether the work follows the brain, or whether a fact was invented: that's theirs to see, unless the run plainly ignored the brain (above). If they want to change a page after what they saw, write it as they word it, with Claude Code's prompt; a restart and a new request show the effect.
+**If the run doesn't use the brain** (it names no page, or makes a call instead of bringing it back): say what `CLAUDE.md` told it to read; they restart and ask once more. If it misses again, show the page that held the answer and note it in `course-material/notes-for-authors.md`. The request touches none of their calls: the run still shows the pages at work; the lesson asked for one that does, so ask them to try one. Never graded.
 
-**Review:** none. The lesson passes when Step 2's review has passed and this step's check passes.
+**Don't:** suggest the request, or judge the result for them.
+
+**Review:** none (the lesson's review ran at Step 3). The lesson passes when the review has passed and this step's check passes. Then show "You can now" and "Next" (which says what to have for Lesson 2).

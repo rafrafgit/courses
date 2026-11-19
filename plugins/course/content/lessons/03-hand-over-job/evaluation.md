@@ -2,70 +2,82 @@
 
 For the reviewer only. It collects the evidence itself and judges it. The learner and the teaching agent never see this file.
 
-**What this lesson tests:** a recurring job handed over as a command that works from the brain, and a first correction filed where it lasts. The material is the learner's own work: there are no known answers. You never judge the drafts, the writing or the business; you judge whether the command and the correction are specific enough to work.
+**What this lesson tests:** that the learner has handed a recurring piece of work to a command, said what the agent does at a gap, and turned something wrong in a run into a correction that lasts. On the learner's own material: there are no known answers.
 
-**Judge on the right version:** the files as they are now. A correction in this lesson may have added a **Corrections** section to the command's file; judge M1 and M2 on the rest of the file.
+**Judge on the right version:** the files as they are when the review runs, at the end of Step 3. Step 4's run comes after the review and is never judged; nor is any result in `work/`.
 
 ## Evidence to collect
 
-The reviewer collects these and writes them, word for word (or the lines that decide each must-have), to the attempt's `evidence.md`. It never summarises, corrects or improves anything.
+The reviewer collects these for the review and writes them, word for word, to the attempt's `evidence.md`. It never summarises, corrects or improves anything.
 
 **Review:** at the end of Step 3: every must-have.
 
-Every item is a file in the workspace. Never read the session history, and never judge what the learner typed or a reply in the conversation. A requirement the mentor wrote is never judged (P8): if something fails because one wasn't followed, note it in `evidence.md` for the course's authors.
+Every item is a file in the workspace. **Never open or quote a file in `inbox/`, `private/` or `work/`:** they hold the learner's material and results, and aren't judged. Never read the session history, and never judge what the learner typed in the conversation or a reply there. A requirement the mentor wrote (the frontmatter, the fixed instructions in the command, saving runs, routing a rule by its kind, the log line) is never judged (P8): if something fails because one wasn't followed, note it in `evidence.md` for the course's authors.
 
-- **E1 — the command:** `.claude/skills/<job>/SKILL.md`, the skill folder that isn't `bring-in` or `check-brain` (the newest, if several). Quote the learner's parts: what it produces, what a good result must get right, what it reads, what it brings back, and any **Corrections**. The fixed instructions (read `CLAUDE.md`, name the pages used, and so on) are the course's, never judged.
-- **E2 — `log.md`:** the lines with `correction →` (a fact correction also has `/bring-in`'s own `filed` line). They say which file each correction went to. A must-get-right added after a run with nothing wrong counts as the correction, wherever its reach put it.
-- **E3 — the file each correction went to:** the command's **Corrections**, `CLAUDE.md`'s **Rules added from corrections**, `voice.md`, or a page. Quote the rule.
+- **E1 — the command:** `.claude/skills/<job>/SKILL.md`, read by its exact path (also reachable through the visible `skills` link), word for word. Find `<job>` from the `correction → …` line in `log.md` or by listing `.claude/skills/` (ignore `bring-in` and `check-brain`).
+- **E2 — `CLAUDE.md`:** its gap section ("At a gap") and its **Rules added from corrections**, word for word.
+- **E3 — the correction:** the `log.md` line `correction → <file>` from this lesson, and the rule or fact in that file, word for word (the command's **Corrections**, `CLAUDE.md`'s **Rules added from corrections**, `voice.md`, or the summary of the page a fact went to).
 
-If there's no `correction →` line, take the newest rule in those places (and in any page `log.md` shows changed in this lesson), and note the missing log line for the authors. A page or `voice.md` written as `status: draft` counts: the draft is where it lasts.
-
-There are no questions for the learner in this lesson.
+When asking the learner questions: this review asks none.
 
 ## Must-haves
 
-**The truths:** none (the learner's own work). **On anyone's material, the files must show:** a command that says what it produces and what a good result must get right, checkably, and what it reads; a correction as a checkable rule, in a file that fits its reach. The runs aren't judged: their drafts stay in the conversation.
+**On the learner's own material, the files must show:**
+- the job in the learner's words, with what a good result must get right, checkably;
+- what it reads from the brain;
+- the gap choice, clear enough to apply;
+- a correction someone could check a result against.
 
-You can't know whether the job is a good one to hand over, or whether the rule fixed the draft. You judge that both are there and specific.
+You can't know whether the job is a good one, whether a run's result was good, whether the rule fixes what went wrong, or what the learner said about its reach: those are the learner's. You judge whether the command, the gap choice and the correction say, specifically, what the lesson asks.
 
 ### M1 — What it produces, and what a good result must get right
-- **Passes if:** the command says what it produces, and names at least two things a good result must get right that someone could check in a draft and that a draft could get wrong (a length, a structure, something it always or never does, a fact it must include, how it ends).
-- **Fails if:** it doesn't say what it produces, or names fewer than two such things ("good", "engaging", "in my style", "professional"; or things true of any draft, "has a title", "in English").
-- **Borderline:** "about 300 words; one tip only": passes. "Friendly, and with a clear call to action": one checkable; fails. "Strong hook in the first line": not checkable; "the first line is a question or a bold claim": checkable. "Uses my voice (see `voice.md`)": a pointer, fine to have, but not one of the two. A check that's vaguer than it should be because the mentor reworded the learner: you can't tell from the file; judge it as written, and if it reads like a paraphrase, note it for the authors.
-- **Feedback on fail:** "What would you check in a draft before sending it?" Never suggest the checks.
+- **Passes if:** the command says what it produces, and names at least one thing about a result's content that someone could check in it ("every price from my price list", "the start date I've agreed", "only the services the enquiry names").
+- **Fails if:** it doesn't say what it produces; or nothing it names about the content can be checked ("good quality", "sounds professional", "like I'd write it"), length or format alone included ("under 300 words").
+- **Borderline:**
+  - "Sounds like me; under one page; every price from my price list": **passes.** The price line is about content and checkable.
+  - "Under 300 words, and friendly": **fails.** Length only, and a tone that can't be checked.
+  - "No jargon": **passes,** barely: someone could check a result for it.
+- **Feedback on fail:** ask what they'd send a result back for, in what it says, and how they'd spot it.
 
 ### M2 — What it reads from the brain
-- **Passes if:** the command names the pages or the kinds of fact it reads ("`offer.md`", "my prices and packages", "the customer pages").
-- **Fails if:** it names nothing it reads, or only "the brain" or "everything".
-- **Borderline:** "what I sell and to whom": kinds of fact that map to pages; passes. The fixed instruction "read `index.md`" alone: the course's; doesn't count.
-- **Feedback on fail:** "What does this job need to know about your business to get it right?"
+- **Passes if:** the command names pages (`offer.md`, the client's page) or kinds of fact ("my prices", "the client's details from their page") it works from.
+- **Fails if:** it names nothing it reads, or only "everything". The command's fixed instructions ("read `CLAUDE.md`'s rules and `index.md`…") are the mentor's, and don't count either way.
+- **Borderline:** "the client's page, and my offer": **passes.** "Whatever's relevant": **fails.**
+- **Feedback on fail:** ask which of their pages the work depends on.
 
-### M3 — A correction, written where it lasts
-- **Passes if:** a rule from this lesson's correction is written in one of the four places (E3), and someone could check it in a draft (something to always or never do, a limit, a fact to use).
-- **Fails if:** no rule from this lesson is in any file, or the only one is vague ("make it better", "punchier", "more like me").
-- **Borderline:** "Never quote a fee in a tip": checkable; passes. "Shorter": vague; fails; "never over 250 words": passes. A fact corrected into its page (a new price): a fact someone could check; passes.
-- **Feedback on fail:** "How would you spot it in a draft?" Never word the rule.
+### M3 — At a gap (the open decision)
+- **The decision:** at a call that's theirs, or a fact the brain lacks, does the agent ask first, or finish and mark it? Either passes, or when each applies.
+- **Passes if:** `CLAUDE.md`'s gap section says, in the learner's words, whether at a call that's theirs or a fact the brain lacks the agent asks first, or finishes and marks it, or when each applies, clearly enough to apply.
+- **Fails if:** it can't be applied ("depends", "use your judgment", "unless it's small" with no measure).
+- **Borderline:**
+  - "Mark it, but ask first about money": **passes.** "Money" is recognisable when the calls in `CLAUDE.md` name prices, discounts or refunds; it's too vague only if nothing else in `CLAUDE.md` gives it a meaning.
+  - "Ask first if it's important": **fails.**
+  - It covers calls but not missing facts, or the other way round: **not judged** (the mentor must cover both); note it for the authors.
+  - It still reads "(Not set yet…)": **not the learner's fail.** The mentor writes their answer in Step 1; note it for the authors, and the verdict is Not yet on this point only, worded as the course's error.
+- **Feedback on fail:** ask what they want the agent to do when it reaches a call of theirs mid-work, and say to make it a rule the agent could follow without asking what they meant.
 
-### M4 — The rule where it applies
-- **The decision:** does the rule hold for all the learner's work, or this job only? **All work:** in `CLAUDE.md`'s **Rules added from corrections**, or `voice.md` for how the business sounds, or the page a fact belongs to. **This job:** in the command's **Corrections**. Either passes.
-- **Passes if:** the rule's words fit its place: a rule in the command is about this job's drafts; a rule in `CLAUDE.md` or `voice.md` doesn't name one job, so any work can follow it.
-- **Fails if:** there's no rule from this lesson in any file (M3 fails too), or a rule in `CLAUDE.md` or `voice.md` names a single job ("in the newsletter, …"), so no other work can follow it.
-- **Borderline:** "never over 250 words" in the command: about this job's drafts; passes. "Never quote a fee" in `CLAUDE.md`: any work can follow it; passes. "Always end with the booking link" in `CLAUDE.md`: names no job; passes. A fact ("our day rate is £450") only in the command: routing a fact to its page is the mentor's; pass M4, and note it for the authors.
-- **Feedback on fail:** "Is this true of your business, for every piece of work, or only of this job's drafts?" Never say which.
+### M4 — The correction is something a result can be checked against
+- **Passes if:** the rule in the file its `correction → …` line names is a rule someone could check a result against ("Only include services the client's enquiry names"; "Never quote a start date I haven't agreed"); or, for a fact, the page's summary now states it ("Day rate €650 from January"), which a result can be checked against.
+- **Fails if:** it can't be checked ("Make it better", "Be more careful", "Sound more like me" with nothing to check).
+- **Borderline:**
+  - "Use 'you' not 'we' when addressing the client": **passes.** It can be checked.
+  - "Warmer tone": **fails.**
+  - No `correction → …` line, or no rule in the file it names: **not the learner's fail.** The mentor should have stayed on Step 3 until it was written. Note it in `evidence.md` for the authors; the verdict is Not yet on this point only, worded as the course's error: the correction wasn't recorded, so the mentor files it with them again.
+- **Feedback on fail:** ask how they'd spot the problem in a result, and to word the rule so someone could check it.
 
 ## Nice-to-haves
 
-These never affect the verdict. Mention at most two, the ones the learner could most easily act on.
+These never affect the verdict. Mention at most two in the feedback, the ones the learner could most easily act on.
 
-- **N1:** the command says what it asks the learner before deciding, beyond the calls in `CLAUDE.md`.
-- **N2:** a second correction, from the second run, filed the same way.
+- **N1:** the command says what it brings back to the learner, beyond the calls in `CLAUDE.md`.
+- **N2:** the rule says what to do instead, not only what to avoid.
 
 ## Verdict and feedback
 
 The learner reads the result as it is, in the terminal (the `evaluator` agent's format).
 - **Passed** only if every must-have is met.
-- **One line per must-have covered:** ✓ or ✗ and its short learner-facing name. Never evidence codes (E1, M4): say "your command", "your rule", "your `CLAUDE.md`".
-- **Never judge the business.** For each unmet must-have, name the kind of gap and one next step, quoting the learner's own file if useful. Don't write their answer for them. Don't soften a fail into "almost".
+- **One line per must-have covered:** ✓ or ✗ and its short learner-facing name. Never evidence codes (E1, M2): name the learner's own work ("your pages", "your command", "the run").
+- **Never give the answer.** For each unmet must-have, name the kind of gap and one next step, quoting the learner's own words or output if useful. On a sample, never name the planted item (who sent what, when, which meeting); on the learner's own material, never write what's true about their business or which calls are theirs. Don't soften a fail into "almost".
 - **Passed:** two or three sentences on what's specifically good, and at most two nice-to-haves. Under 200 words in all.
 - **Earlier reviews:** read their results first. Say whether each earlier point was acted on.
 - **Tone:** a senior colleague in the learner's field. Direct, specific, no praise padding, no exclamation marks.

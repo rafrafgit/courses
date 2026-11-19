@@ -13,6 +13,6 @@ Report, one line each, with the files and the lines that show it:
 3. **Claims without a source:** a summary claim with no timeline entry, or an entry with no source.
 4. **Orphans:** a page that isn't in `index.md`, or an `index.md` line whose page is gone.
 5. **Not brought in:** an `inbox/` file (not `.gitkeep`, not a text copy) with no `filed` line in `log.md`.
-6. **Out of place:** a client's name or personal details anywhere; something from `private/` quoted elsewhere.
+6. **Out of place:** a client's contact details anywhere outside `private/`; something from `private/` quoted elsewhere.
 
-Then go through the findings with the owner, one at a time. For each, they decide what's true; you make the change by `CLAUDE.md`'s rules (what they approve, Claude Code asks for), and log it. If there's nothing to report, say so in one line.
+Then go through the findings with the owner, one at a time. For each, they decide what's true, or that it stays as it is and why; you make any change by `CLAUDE.md`'s rules (what they approve, Claude Code asks for). Log one line per finding, with the outcome and reason as the owner gave them: `YYYY-MM-DD | check-brain: <finding> → <what the owner decided>`. If there's nothing to report, say so in one line, and log `YYYY-MM-DD | check-brain: nothing found`.
