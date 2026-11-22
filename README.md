@@ -4,11 +4,11 @@ Learn AI-native work by doing it: each course runs inside Claude Code, on your o
 
 ## Install
 
-You need Claude Code and a paid Claude plan. In Claude Code, type:
+You need Claude Code and a paid Claude plan. In Claude Code, type these one at a time, pressing Enter after each:
 
 ```
 /plugin marketplace add rafrafgit/courses
-/plugin install course@courses
+/plugin install dawn@courses
 ```
 
-Then start a new folder for your business, open Claude Code there, and type `/course:lesson`.
+Then quit Claude Code, make a new folder for your business, open Claude Code in that folder, and type `/dawn:mentor`. Dawn, your mentor, takes it from there.
