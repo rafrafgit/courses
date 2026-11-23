@@ -29,7 +29,7 @@ Before Step 1, say in two lines what the setup put in the folder (the brain's fo
 - A document is read where it is (T17) and copied into `inbox/` as it came; once filed, it moves to `sources/` (`/bring-in`'s step 10). Before the first read outside the folder, say: Claude Code will ask whether to allow it; choose "Yes, but ask again next time" (T18).
 - A Word file gets a text copy beside it (`<name>.docx.md`, with `textutil -convert txt -output <copy> <file>` on a Mac, M4); if that fails, they type its key lines. A Google Doc is printed to PDF first (T19); a Notion page exported to Markdown.
 - Drafts hold only what the material states; every gap `[ASK: …]`. They're written as `status: draft`; say the change in a line, so Claude Code asks (T13).
-- Opening a file: right after Step 1's "I'll show you how", give the how for their surface once, from the mentor skill's "Where you run" (in the app: click the file's name, so always write file names as their paths, `company.md`; in the terminal: ask me, and I open it in their default app, T27). Don't repeat it later. If opening fails, give the full path and show the file word for word, never a summary.
+- Opening a file: right after Step 1's "I'll show you how", give the how for their surface once, from the mentor skill's "Where you run" (in both: ask me; in the app it opens inside the app, in the terminal in their default app, T27). Don't repeat it later. If opening fails, give the full path and show the file word for word, never a summary.
 
 **Don't:** fill a gap, word a fact for them, or choose the setting for them; recommend turning training off once, then leave it.
 
