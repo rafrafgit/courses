@@ -13,7 +13,7 @@ This time you do it on your own, as you will from now on. Something new comes in
 
 ## Before we start
 
-Have ready the new thing and the third piece of work you set aside at the end of Lesson 3; the work should need the new thing. Keep out what you kept out before. This time I don't name your choices or teach: you've made each before, and if you're unsure how, I'll say which lesson. What passes is on the course's reference page: type `/dawn:mentor read` to open it.
+Have ready the new thing and the third piece of work you set aside at the end of Lesson 3; the work should need the new thing. Keep out what you kept out before. This time I don't name your choices or teach: you've made each before, and if you're unsure how, I'll say which lesson. What passes is on the course's reference page: ask me to show it to you.
 
 ## Step 1 — Bring in what's new
 

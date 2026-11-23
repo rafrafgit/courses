@@ -12,11 +12,11 @@ root="$(cd "$(dirname "$0")/.." && pwd)"
 here="$(pwd -P)"; home="$(cd "$HOME" 2>/dev/null && pwd -P)"
 case "$here" in
   "/"|"$home"|"$home/Desktop"|"$home/Documents"|"$home/Downloads"|"$home/Library"|"$home/Library/"*|/Users|/System*|/Applications*|/usr*)
-    echo "Not set up: this session is in $here, which isn't a folder for your business. Make a new folder named after your business (for example ~/my-business), open Claude there, and type /dawn:mentor again. Nothing was changed."
+    echo "Not set up: this session is in $here, which isn't a folder for your business. Make a new folder named after your business, open it, and type /dawn:mentor again. Nothing was changed."
     exit 3 ;;
 esac
 if [ ! -d course-material ] && [ "$(ls -A 2>/dev/null | wc -l)" -gt 40 ]; then
-  echo "Not set up: $here already holds $(ls -A | wc -l | tr -d ' ') files and folders, so it doesn't look like a new folder for your business. Make a new folder named after your business, open Claude there, and type /dawn:mentor again. Nothing was changed."
+  echo "Not set up: $here already holds $(ls -A | wc -l | tr -d ' ') files and folders, so it doesn't look like a new folder for your business. Make a new folder named after your business, open it, and type /dawn:mentor again. Nothing was changed."
   exit 3
 fi
 src="$root/content/sample/files"

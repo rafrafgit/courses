@@ -1,7 +1,7 @@
 {
   "name": "dawn",
   "displayName": "Dawn",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Build a company brain for your business: set up the folder where your business's knowledge lives, so Claude Code knows your business without you explaining it.",
   "author": {
     "name": "Martin"
