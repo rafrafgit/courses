@@ -122,12 +122,12 @@ The steps are the `## Step` sections of `lesson.md`: 1 Bring in your change, 2 B
 - Their account, in their own words.
 
 **Stay on this step if:**
-- They asked in this tab, or with background: in the work tab, `/clear` and ask again (T24).
-- The work tab was closed: a new tab, as in Lesson 1 (on Windows, the `cd` line again, T25), then `claude`.
+- They asked in this session, or with background: in the work session, `/clear` and ask again (T24).
+- The work session was closed: a new work session, as in Lesson 1 (with the how for their surface, the mentor skill's "Where you run").
 - Nothing saved in `work/other/`: say what `CLAUDE.md` asks of every piece of work, and have them run it again.
 
-**If the run uses the old version, or names no page:** say what `CLAUDE.md` told it to read; they `/clear` in the work tab and ask once more; if it misses again, show the page that held the new version and note it in `course-material/notes-for-authors.md`. Never graded.
+**If the run uses the old version, or names no page:** say what `CLAUDE.md` told it to read; they `/clear` in the work session and ask once more; if it misses again, show the page that held the new version and note it in `course-material/notes-for-authors.md`. Never graded.
 
-**Don't:** suggest the request, judge the result for them, or run it in this tab.
+**Don't:** suggest the request, judge the result for them, or run it in this session.
 
 **Review:** none (the review ran at Step 3). The lesson passes when the review has passed and this step's check passes. Then "You can now" and "Next" (which says what to have for Lesson 3).

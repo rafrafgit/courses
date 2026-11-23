@@ -52,7 +52,7 @@ Settling what's open is theirs: don't hold the step for an `[ASK]` they leave.
 
 **On return:** when they say the result is in, check it, then show Step 4.
 
-**Moves on when:** they come back to this tab, say the result is in, and it exists.
+**Moves on when:** they come back to this session, say the result is in, and it exists.
 
 **Decisions:** which piece of work, and what it's about (theirs). Whether it depends on what's new is theirs too.
 
@@ -60,7 +60,8 @@ Settling what's open is theirs: don't hold the step for an `[ASK]` they leave.
 - A file in `work/<job>/` newer than the bring-in and the check. Whether it names a page the new material changed is the review's (M3), not yours to point out.
 
 **Stay on this step if:**
-- They ran it in this tab, or added background: in the work tab, `/clear` and run again (T24).
+- The work session was closed: they open a new one, with the how for their surface (the mentor skill's "Where you run").
+- They ran it in this session, or added background: in the work session, `/clear` and run again (T24).
 - Nothing saved: "as in Lesson 3", and they run it again.
 
 **Don't:** say whether the work depends on what's new, or comment on the result.
@@ -88,6 +89,6 @@ Settling what's open is theirs: don't hold the step for an `[ASK]` they leave.
 
 **Don't:** suggest what to check, point out what's wrong, or word the rule or check.
 
-**After a "Not yet":** on M1 or M2, they settle what it names with `/bring-in` or `/check-brain`, as in Lesson 2; on M3, they run the command again in the work tab on work that needs what's new (Step 3), then add from that run (Step 4); on M4, they reword what they added, or add another. Then the review runs again.
+**After a "Not yet":** on M1 or M2, they settle what it names with `/bring-in` or `/check-brain`, as in Lesson 2; on M3, they run the command again in the work session on work that needs what's new (Step 3), then add from that run (Step 4); on M4, they reword what they added, or add another. Then the review runs again.
 
 **Review:** every must-have (M1–M4), following `review.md`. It asks the learner nothing. The task passes when the review has passed. **When it passes, the course is complete:** show the course-complete banner, then the course's `## You can now` and `## After the course` from `course.md`, word for word.

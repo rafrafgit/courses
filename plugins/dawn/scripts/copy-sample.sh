@@ -5,6 +5,20 @@
 # always. Never overwrites a file that's already there. Runs once: leaves course-material/sample-copied.
 # The sample's chat and calendar are not copied: the course connector serves them.
 root="$(cd "$(dirname "$0")/.." && pwd)"
+# Never set up a folder that isn't the learner's business folder: the home folder, the disk's
+# root, a system folder, or a big folder with no course in it. A session opened there (the desktop
+# app can open one in the home folder) would put the brain and a git history over everything in it
+# (Martin's desktop test, 2026-11-23). Exit 3, with the reason, and change nothing.
+here="$(pwd -P)"; home="$(cd "$HOME" 2>/dev/null && pwd -P)"
+case "$here" in
+  "/"|"$home"|"$home/Desktop"|"$home/Documents"|"$home/Downloads"|"$home/Library"|"$home/Library/"*|/Users|/System*|/Applications*|/usr*)
+    echo "Not set up: this session is in $here, which isn't a folder for your business. Make a new folder named after your business (for example ~/my-business), open Claude there, and type /dawn:mentor again. Nothing was changed."
+    exit 3 ;;
+esac
+if [ ! -d course-material ] && [ "$(ls -A 2>/dev/null | wc -l)" -gt 40 ]; then
+  echo "Not set up: $here already holds $(ls -A | wc -l | tr -d ' ') files and folders, so it doesn't look like a new folder for your business. Make a new folder named after your business, open Claude there, and type /dawn:mentor again. Nothing was changed."
+  exit 3
+fi
 src="$root/content/sample/files"
 if [ -f course-material/sample-copied ]; then
   echo "The sample files were already copied on $(cat course-material/sample-copied)."
@@ -54,7 +68,7 @@ has_git() {
   "$g" --version >/dev/null 2>&1
 }
 git_note=""
-if [ -d "$scaffold" ] && [ ! -d .git ] && has_git; then
+if [ -d "$scaffold" ] && [ ! -d .git ] && has_git && ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   if git init -q 2>/dev/null; then
     for line in "course-material/" ".claude/settings.local.json" "skills" ".DS_Store" ".obsidian/"; do
       grep -qxF "$line" .gitignore 2>/dev/null || echo "$line" >> .gitignore

@@ -4,12 +4,12 @@
 
 ## What you'll get
 
-After this lesson, you ask Claude for a piece of your work in one line, and it comes back built on what your business is: what you sell, your prices, how you work. The calls that are yours, it brings back to you instead of guessing. You'll have your brain's first pages, `company.md` and `offer.md`, and your calls in `CLAUDE.md`, all in your business's folder. To open any of them, ask me.
+After this lesson, you ask Claude for a piece of your work in one line, and it comes back built on what your business is: what you sell, your prices, how you work. The calls that are yours, it brings back to you instead of guessing. You'll have your brain's first pages, `company.md` and `offer.md`, and your calls in `CLAUDE.md`, all in your business's folder. You can open any of them; I'll show you how.
 
 1. Give me your business, typed or from a document, and read my first drafts.
 2. Bring in past proposals if you have them, and correct the drafts.
 3. Tell me which calls are yours.
-4. Ask for a piece of your work in a second tab, where nothing from this lesson is said.
+4. Ask for a piece of your work in a second session, where nothing from this lesson is said.
 
 ## Before we start
 
@@ -24,9 +24,9 @@ What comes in lands in `inbox/` and, once I've filed it, moves to `sources/`, ke
 > **▶ Your turn:** Give me your business, with nothing that names a client yet: type what you sell, to whom, at what price and how you work; or tell me in plain words where a document is that says it (your price list in Downloads, say).
 
 <!-- after -->
-My drafts are in this folder: `company.md` and `offer.md`, each marked as a draft, with my questions marked `[ASK: …]`. To open any file in your folder, ask me: "open company.md". It opens in your own editor.
+My drafts are in this folder: `company.md` and `offer.md`, each marked as a draft, with my questions marked `[ASK: …]`. You can open any file in your folder and read it; I'll show you how.
 
-> **▶ Your turn:** Ask me to open `company.md` and `offer.md`, and read my drafts there.
+> **▶ Your turn:** Open `company.md` and `offer.md`, and read my drafts there.
 
 ## Step 2 — Bring in your proposals, and correct me
 
@@ -39,7 +39,7 @@ A proposal with a client's email or phone goes to `private/`, not `sources/`: I 
 <!-- after -->
 Your brain's first pages are written: `company.md` and `offer.md`. Your answers are kept, as you typed them, in `sources/`. A change at the prompt shows one line; the page shows what your brain now says as a whole.
 
-> **▶ Your turn:** Ask me to open `company.md` and `offer.md` again, read them through, and tell me anything that isn't true.
+> **▶ Your turn:** Open `company.md` and `offer.md` again, read them through, and tell me anything that isn't true.
 
 ## Step 3 — Tell me which calls are yours
 
@@ -52,26 +52,23 @@ I'll write your answer into `CLAUDE.md`, the file I read at the start of every s
 <!-- after -->
 Your calls are in `CLAUDE.md` in this folder, under "Calls that are mine".
 
-> **▶ Your turn:** Ask me to open `CLAUDE.md`, and read your calls there.
+> **▶ Your turn:** Open `CLAUDE.md`, and read your calls there.
 
 ## Step 4 — Ask for a piece of your work
 
 Only a session that never heard this lesson shows what your brain does on its own. This conversation watched you build it, so it knows too much to be a fair test.
 
-So from now on there are two tabs. This one is your lesson tab: the lesson, and commands like `/bring-in`, happen here. A second one, your work tab, is only for runs. Open it with Cmd+T on a Mac (it opens in this same folder) or Ctrl+Shift+T in Windows Terminal (type the `cd` line I give you first). Where the work reaches a call of yours, it's marked for you rather than decided. The result is saved in `work/other/`; you can ask the work tab's Claude to open it, too.
+So from now on there are two sessions in this folder. This one is your lesson: the lesson, and commands like `/bring-in`, happen here. A second one, your work session, is only for runs; I'll show you how to open it. Where the work reaches a call of yours, it's marked for you rather than decided. The result is saved in `work/other/`.
 
-> **▶ Your turn:** In a new tab, type `claude`, then ask for a piece of your work in one line, one that touches a call you named. When the result is in, come back to your lesson tab and tell me.
-> ```
-> claude
-> ```
+> **▶ Your turn:** Open your work session, then ask it for a piece of your work in one line, one that touches a call you named. When the result is in, come back here and tell me.
 
-Nothing here is graded: you're the reviewer now. In the work tab, ask Claude to open the result. Look for the facts it took from your pages, the pages it names, how it handled your call, and anything it states that your brain doesn't have. Keep the work tab open for the next lessons.
+Nothing here is graded: you're the reviewer now. Open the result in the work session. Look for the facts it took from your pages, the pages it names, how it handled your call, and anything it states that your brain doesn't have. Keep the work session open for the next lessons.
 
 > **▶ Your turn:** Tell me what the result took from your pages, how it handled your call, and anything it got wrong.
 
 ## You can now
 
-You can ask Claude for a piece of your work in one line and get it back built on your business, with the calls that are yours brought back to you. Your brain's first pages, `company.md` and `offer.md`, draft pages for clients your documents named, and your calls in `CLAUDE.md` are in your business's folder; the run's result is in `work/other/`. Any of them opens when you ask.
+You can ask Claude for a piece of your work in one line and get it back built on your business, with the calls that are yours brought back to you. Your brain's first pages, `company.md` and `offer.md`, draft pages for clients your documents named, and your calls in `CLAUDE.md` are in your business's folder; the run's result is in `work/other/`. You can open any of them whenever you like.
 
 ## Next
 

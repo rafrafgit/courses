@@ -7,7 +7,7 @@
 After this lesson, a piece of work you do again is one command: you type `/` and its name with what this piece is about, and it's done from your brain and saved in your folder. When it's wrong, you say the rule once, and whether it's for all your work or this job, and it goes where it lasts. You'll have the command, under the `skills` link in your business's folder; its results in `work/`; and your first correction, in the file it belongs in.
 
 1. Tell me the job, what a good result must get right, what it needs, and what I do at a gap.
-2. Run it on a real piece, in your work tab, and say what's wrong.
+2. Run it on a real piece, in your work session, and say what's wrong.
 3. Tell me the rule that fixes it, and how far it reaches.
 4. Run it again, and see the fix hold.
 
@@ -24,17 +24,17 @@ A job will also meet gaps: a call that's yours, or a fact your brain doesn't hav
 > **▶ Your turn:** Tell me, in your own words, the job you're handing over, what it produces, what you'd send a result back for, what it needs from your brain, and a name for its command.
 
 <!-- after -->
-Your command is `/` and the name you gave it, in its own folder under the `skills` link in your business's folder. Note the name: you'll type it in your work tab.
+Your command is `/` and the name you gave it, in its own folder under the `skills` link in your business's folder. Note the name: you'll type it in your work session.
 
-> **▶ Your turn:** Ask me to open your command's file and `CLAUDE.md`, and read your job and your gap choice there, in your words.
+> **▶ Your turn:** Open your command's file and `CLAUDE.md`, and read your job and your gap choice there, in your words.
 
 ## Step 2 — Run it on a real piece
 
 A run in a session that didn't write the command shows what the command and your brain do on their own, and its result is what you'll correct next.
 
-The run happens in your work tab. `/clear` starts it fresh. Give the command only what this piece is about, a line or your notes, and no passwords: your brain has the rest. The result is saved in `work/`, in a folder with your command's name. If the command isn't found, come back here and I'll sort it out.
+The run happens in your work session. `/clear` starts it fresh. Give the command only what this piece is about, a line or your notes, and no passwords: your brain has the rest. The result is saved in `work/`, in a folder with your command's name. If the command isn't found, come back here and I'll sort it out.
 
-> **▶ Your turn:** In your work tab, type `/clear`, then your command with what one real piece is about. Ask that session to open the result, then come back here and tell me it's in.
+> **▶ Your turn:** In your work session, type `/clear`, then your command with what one real piece is about. Open the result, then come back here and tell me it's in.
 > ```
 > /clear
 > ```
@@ -54,15 +54,15 @@ Where it goes depends on what it is. A fact about your business goes to its page
 <!-- after -->
 Your correction is in the file it belongs in, and `log.md` lists it as a correction.
 
-> **▶ Your turn:** Ask me to open the file your correction went into, and read your rule there.
+> **▶ Your turn:** Open the file your correction went into, and read your rule there.
 
 ## Step 4 — Run it again
 
 A fix lasts only if a run that never heard the correction follows it.
 
-Run it in your work tab again, after `/clear`, with only what the next piece is about. If the rule doesn't hold, come back anyway: we'll look at why.
+Run it in your work session again, after `/clear`, with only what the next piece is about. If the rule doesn't hold, come back anyway: we'll look at why.
 
-> **▶ Your turn:** In your work tab, type `/clear`, then your command with what your second piece is about. Ask that session to open the result, then come back here and tell me it's in.
+> **▶ Your turn:** In your work session, type `/clear`, then your command with what your second piece is about. Open the result, then come back here and tell me it's in.
 > ```
 > /clear
 > ```

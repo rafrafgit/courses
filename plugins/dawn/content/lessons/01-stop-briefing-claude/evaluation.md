@@ -4,7 +4,7 @@ For the reviewer only. It collects the evidence itself and judges it. The learne
 
 **What this lesson tests:** that the learner has given the agent their business, deciding what's true from the drafts the agent made from their material, and named the calls that are theirs, so a new session can work from the brain without a briefing. On the learner's own material: there are no known answers.
 
-**Judge on the right version:** the files as they are when the review runs, at the end of Step 3. Step 4's run, in the learner's work tab, comes after the review and is never judged. Draft pages in `customers/` are the agent's, not judged.
+**Judge on the right version:** the files as they are when the review runs, at the end of Step 3. Step 4's run, in the learner's work session, comes after the review and is never judged. Draft pages in `customers/` are the agent's, not judged.
 
 ## Evidence to collect
 

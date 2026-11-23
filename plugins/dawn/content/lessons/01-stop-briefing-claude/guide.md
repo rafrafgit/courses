@@ -29,7 +29,7 @@ Before Step 1, say in two lines what the setup put in the folder (the brain's fo
 - A document is read where it is (T17) and copied into `inbox/` as it came; once filed, it moves to `sources/` (`/bring-in`'s step 10). Before the first read outside the folder, say: Claude Code will ask whether to allow it; choose "Yes, but ask again next time" (T18).
 - A Word file gets a text copy beside it (`<name>.docx.md`, with `textutil -convert txt -output <copy> <file>` on a Mac, M4); if that fails, they type its key lines. A Google Doc is printed to PDF first (T19); a Notion page exported to Markdown.
 - Drafts hold only what the material states; every gap `[ASK: …]`. They're written as `status: draft`; say the change in a line, so Claude Code asks (T13).
-- Opening a file: when they ask, open it in their default app (`open <file>` on a Mac, `open -e <file>` if no app is set; `start "" <file>` on Windows, T27). If it fails, give the full path and show it word for word, never a summary.
+- Opening a file: right after Step 1's "I'll show you how", give the how for their surface once, from the mentor skill's "Where you run" (in the app: click the file's name, so always write file names as their paths, `company.md`; in the terminal: ask me, and I open it in their default app, T27). Don't repeat it later. If opening fails, give the full path and show the file word for word, never a summary.
 
 **Don't:** fill a gap, word a fact for them, or choose the setting for them; recommend turning training off once, then leave it.
 
@@ -95,9 +95,9 @@ Before Step 1, say in two lines what the setup put in the folder (the brain's fo
 
 ## Step 4 — Ask for a piece of your work
 
-**Before they run:** on Windows, give them, with the step, the line to type in the new tab first: `cd "<this folder's full path>"` (Windows Terminal opens new tabs in the home folder, T25). On a Mac, nothing: the new tab opens in the same folder.
+**Before they run:** just before the step's ask, give in one line each, from the mentor skill's "Where you run": how to open the work session, how to open the result there, and how to come back to this session.
 
-**On return:** when they say the result is in, show the step's text from "Nothing here is graded" (the line after the command block). If the run asked them something back instead of saving, have them answer it there, then come back.
+**On return:** when they say the result is in, show the step's text from "Nothing here is graded" (the line after the ask). If the run asked them something back instead of saving, have them answer it there, then come back.
 
 **Moves on when:** they've told you what the run took from their pages, how it handled their call, and anything it got wrong.
 
@@ -108,13 +108,13 @@ Before Step 1, say in two lines what the setup put in the folder (the brain's fo
 - Their account, in their own words.
 
 **Stay on this step if:**
-- They asked in this tab, or with background, or changed the brain's pages after the run: in the work tab, `/clear` and ask again (T24).
+- They asked in this session, or with background, or changed the brain's pages after the run: in the work session, `/clear` and ask again (T24).
 - Nothing saved in `work/other/`: say what `CLAUDE.md` asks of every piece of work, and have them run it again.
 
-**If the run doesn't use the brain** (it names no page, or makes a call instead of bringing it back): say what `CLAUDE.md` told it to read; they `/clear` in the work tab and ask once more. If it misses again, show the page that held the answer and note it in `course-material/notes-for-authors.md`. The request touches none of their calls: the run still shows the pages at work; the lesson asked for one that does, so ask them to try one. Never graded.
+**If the run doesn't use the brain** (it names no page, or makes a call instead of bringing it back): say what `CLAUDE.md` told it to read; they `/clear` in the work session and ask once more. If it misses again, show the page that held the answer and note it in `course-material/notes-for-authors.md`. The request touches none of their calls: the run still shows the pages at work; the lesson asked for one that does, so ask them to try one. Never graded.
 
-**Stated, not asked:** the work tab stays open for the next lessons; each later run starts there with `/clear` (T24).
+**Stated, not asked:** the work session stays open for the next lessons; each later run starts there with `/clear` (T24).
 
-**Don't:** suggest the request, judge the result for them, or run it in this tab.
+**Don't:** suggest the request, judge the result for them, or run it in this session.
 
 **Review:** none (the lesson's review ran at Step 3). The lesson passes when the review has passed and this step's check passes. Then show "You can now" and "Next" (which says what to have for Lesson 2).

@@ -9,7 +9,7 @@ After this lesson, when something in your business changes or a client gets in t
 1. Tell me one real change, and approve what it changes.
 2. Bring in a client's material, and settle what disagrees.
 3. Check your brain for what's slipped, and choose which pages need your yes.
-4. Ask for work that depends on what's new, in your work tab.
+4. Ask for work that depends on what's new, in your work session.
 
 ## Before we start
 
@@ -26,7 +26,7 @@ Pages that say what your business is, like `offer.md`, wait for your yes: Claude
 <!-- after -->
 Your change is filed in `sources/`, saved as you typed it, and `log.md` lists each page it touched. The prompt showed you one change; the pages show what your brain now says.
 
-> **▶ Your turn:** Ask me to open the pages your change touched, and read them through.
+> **▶ Your turn:** Open the pages your change touched, and read them through.
 
 ## Step 2 — Bring in a client, and settle what disagrees
 
@@ -39,7 +39,7 @@ A document with the client's email or phone is filed to `private/`, read and nev
 <!-- after -->
 Your client's page is in `customers/`, and `log.md` lists every page the material touched.
 
-> **▶ Your turn:** Ask me to open your client's page and the other pages the material touched, and read them through.
+> **▶ Your turn:** Open your client's page and the other pages the material touched, and read them through.
 
 ## Step 3 — Check your brain
 
@@ -50,15 +50,15 @@ Pages drift as they're filed one change at a time: a summary falls behind its hi
 <!-- after -->
 Each finding and what you decided is in `log.md`; your answer on which pages need your yes is in `CLAUDE.md`, under "Pages I approve".
 
-> **▶ Your turn:** Ask me to open `CLAUDE.md`, and read your answer under "Pages I approve".
+> **▶ Your turn:** Open `CLAUDE.md`, and read your answer under "Pages I approve".
 
 ## Step 4 — Ask for work that uses what's new
 
 Only a session that never heard this lesson shows whether your brain, not this conversation, now carries the change.
 
-The run happens in your work tab, the second tab from Lesson 1. `/clear` starts it fresh, and it reads your brain from the start. Add no background: the point is to see what the brain carries. The result is saved in `work/other/`. Come back to this tab when it's in.
+The run happens in your work session, the second session from Lesson 1. `/clear` starts it fresh, and it reads your brain from the start. Add no background: the point is to see what the brain carries. The result is saved in `work/other/`. Come back to this session when it's in.
 
-> **▶ Your turn:** In your work tab, type `/clear`, then ask for a piece of your work that depends on your change or your client. Ask that session to open the result, then come back here and tell me it's in.
+> **▶ Your turn:** In your work session, type `/clear`, then ask for a piece of your work that depends on your change or your client. Open the result, then come back here and tell me it's in.
 > ```
 > /clear
 > ```

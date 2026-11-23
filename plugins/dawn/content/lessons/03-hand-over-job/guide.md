@@ -59,11 +59,12 @@ The steps are the `## Step` sections of `lesson.md`: 1 Describe the job, 2 Run i
 - Their account of what's wrong.
 
 **Stay on this step if:**
-- They ran it in this tab or added background: in the work tab, `/clear` and run again (T24).
+- The work session was closed: they open a new one, with the how for their surface (the mentor skill's "Where you run").
+- They ran it in this session or added background: in the work session, `/clear` and run again (T24).
 - Nothing saved in `work/<job>/`: say what the command asks of every run, and run again.
 
 **If it doesn't happen:**
-- The command isn't found: check the folder name matches the frontmatter's `name`; have them type `/reload-skills` in the work tab (T7); note it in `course-material/notes-for-authors.md`.
+- The command isn't found: check the folder name matches the frontmatter's `name`; have them type `/reload-skills` in the work session (T7); note it in `course-material/notes-for-authors.md`.
 - Nothing is wrong: they run it on a second piece. If that's right too, they add one more thing a good result must get right, which they'd now check for; it counts as Step 3's correction: a rule, its reach asked as usual, filed where it says, with its `correction →` line.
 
 **Don't:** point out what's wrong; the result is theirs to judge.
@@ -111,7 +112,7 @@ The steps are the `## Step` sections of `lesson.md`: 1 Describe the job, 2 Run i
 - A file in `work/<job>/` newer than the correction.
 - Their account.
 
-**If the rule didn't hold:** say where it was filed and what the run should have read; they `/clear` in the work tab and run once more; if it misses again, note it in `course-material/notes-for-authors.md`. Never graded.
+**If the rule didn't hold:** say where it was filed and what the run should have read; they `/clear` in the work session and run once more; if it misses again, note it in `course-material/notes-for-authors.md`. Never graded.
 
 **Don't:** judge the result for them.
 

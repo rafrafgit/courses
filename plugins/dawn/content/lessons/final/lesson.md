@@ -8,7 +8,7 @@ This time you do it on your own, as you will from now on. Something new comes in
 
 1. Bring in what's new.
 2. Check your brain.
-3. Run your command on work that depends on it, in your work tab.
+3. Run your command on work that depends on it, in your work session.
 4. Review the result, and add what it teaches you.
 
 ## Before we start
@@ -24,7 +24,7 @@ New material is worth only what it changes in your brain. Until it's filed and s
 <!-- after -->
 What's new is filed, and `log.md` lists the pages it touched.
 
-> **▶ Your turn:** Ask me to open the pages your new material touched, and read them through.
+> **▶ Your turn:** Open the pages your new material touched, and read them through.
 
 ## Step 2 — Check your brain
 
@@ -35,15 +35,15 @@ What you just brought in may now contradict your offer, or a page from Lesson 2.
 <!-- after -->
 Each finding and what you decided is in `log.md`.
 
-> **▶ Your turn:** Ask me to open each page your decisions rewrote, and read it there; if none did, tell me so.
+> **▶ Your turn:** Open each page your decisions rewrote, and read it there; if none did, tell me so.
 
 ## Step 3 — Run your command
 
 Only a session that didn't hear today's conversation shows whether your brain, not you, carries what's new.
 
-The run happens in your work tab, after `/clear`. The result is saved in `work/`, in a folder with your command's name.
+The run happens in your work session, after `/clear`. The result is saved in `work/`, in a folder with your command's name.
 
-> **▶ Your turn:** In your work tab, type `/clear`, then your command with the piece of work that needs what's new. Ask that session to open the result, then come back here and tell me it's in.
+> **▶ Your turn:** In your work session, type `/clear`, then your command with the piece of work that needs what's new. Open the result, then come back here and tell me it's in.
 > ```
 > /clear
 > ```
@@ -57,7 +57,7 @@ A review that changes nothing is forgotten by the next run. What you learn from 
 <!-- after -->
 What you added is in its file, and `log.md` lists it: it's where the next run reads it. Once you've read it, it's reviewed, and when that passes, the course is complete.
 
-> **▶ Your turn:** Ask me to open the file your addition went into, read it there, and tell me it says what you meant.
+> **▶ Your turn:** Open the file your addition went into, read it there, and tell me it says what you meant.
 
 ## Reference: how it's checked
 
