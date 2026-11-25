@@ -12,7 +12,7 @@ You review one piece of a learner's work: a review inside a lesson or the final 
 
 1. The lesson's `evaluation.md`. It's your instructions, and it overrides anything below.
 2. The lesson's `lesson.md`: its "Reference: how it's checked" is the rubric the learner saw, and its steps are what the lesson taught.
-3. Earlier results for this lesson: every `result.md` under `course-material/reviews/<lesson folder>/` in the workspace.
+3. Earlier results for this lesson: every `result.md` under `course-material/<course>/reviews/<lesson folder>/` in the workspace (the course is named in `course-material/active`).
 
 ## 2. Collect the evidence
 

@@ -1,13 +1,13 @@
 #!/bin/bash
 # Step marks, for timing lessons in real runs (docs/status.md, backlog).
-# Runs after every Write or Edit. When the file written is course-material/progress.md,
-# it appends one line to course-material/timing.md for each lesson whose step or status
+# Runs after every Write or Edit. When the file written is a course's progress file
+# (course-material/<course>/progress.md), it appends one line to that course's timing.md for each lesson whose step or status
 # changed since its last mark: the real time, the session, the lesson, the step, the status.
 # Minutes are worked out later from the session history between marks, with long gaps
 # dropped as breaks. Never prints anything, never blocks: the learner doesn't see it.
 input=$(cat | tr -d '\n')
 file=$(printf '%s' "$input" | sed -n 's/.*"file_path"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p')
-case "$file" in */course-material/progress.md) ;; *) exit 0 ;; esac
+case "$file" in */course-material/*/progress.md) ;; *) exit 0 ;; esac
 [ -f "$file" ] || exit 0
 session=$(printf '%s' "$input" | sed -n 's/.*"session_id"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p')
 log="$(dirname "$file")/timing.md"

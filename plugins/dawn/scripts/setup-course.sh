@@ -1,10 +1,20 @@
 #!/bin/bash
-# Set up the learner's workspace (the current folder) for the course: copy the course's
-# sample files and its scaffold, if it has them (starting git history after the scaffold,
-# where git is installed), and switch two features off and add a visible skills link,
-# always. Never overwrites a file that's already there. Runs once: leaves course-material/sample-copied.
+# Start a course in the learner's workspace (the current folder), or move a folder from before the
+# split: SPEC, "The runtime". Usage: setup-course.sh <course-slug>
+# 1. Moves a folder's progress from before the split (course-material/progress.md, timing.md,
+#    reviews/, sample-copied) into course-material/build-company-brain/, with the course as it was
+#    published then (Dawn's legacy copy), so a learner finishes the version they started.
+# 2. Copies the course's content into course-material/<slug>/content/, once: from the installed
+#    course plugin (it registers its path in ~/.learnwithdawn/courses/<slug>), or, for the legacy
+#    course only, from Dawn's own copy. The mentor and reviewer read only this copy.
+# 3. Marks it the folder's course (course-material/active).
+# 4. Sets the workspace up for it, once per course: the sample files and the scaffold, if it has
+#    them (starting git history after the scaffold, where git is installed); two features off and a
+#    visible skills link, always. Never overwrites a file that's already there.
 # The sample's chat and calendar are not copied: the course connector serves them.
 root="$(cd "$(dirname "$0")/.." && pwd)"
+slug="$1"
+case "$slug" in ""|*[!a-z0-9-]*) echo "Usage: setup-course.sh <course-slug>"; exit 1 ;; esac
 # Never set up a folder that isn't the learner's business folder: the home folder, the disk's
 # root, a system folder, or a big folder with no course in it. A session opened there (the desktop
 # app can open one in the home folder) would put the brain and a git history over everything in it
@@ -19,9 +29,44 @@ if [ ! -d course-material ] && [ "$(ls -A 2>/dev/null | wc -l)" -gt 40 ]; then
   echo "Not set up: $here already holds $(ls -A | wc -l | tr -d ' ') files and folders, so it doesn't look like a new folder for your business. Make a new folder named after your business, open it, and type /dawn:mentor again. Nothing was changed."
   exit 3
 fi
-src="$root/content/sample/files"
-if [ -f course-material/sample-copied ]; then
-  echo "The sample files were already copied on $(cat course-material/sample-copied)."
+# 1. A folder from before the split: its state was course-material/progress.md and the course was
+# build-company-brain, in Dawn itself.
+if [ -f course-material/progress.md ] && [ ! -f course-material/active ]; then
+  old=build-company-brain
+  mkdir -p "course-material/$old"
+  for f in progress.md timing.md reviews sample-copied; do
+    [ -e "course-material/$f" ] && [ ! -e "course-material/$old/$f" ] && mv "course-material/$f" "course-material/$old/$f"
+  done
+  if [ ! -d "course-material/$old/content" ] && [ -d "$root/legacy/$old" ]; then
+    cp -R "$root/legacy/$old" "course-material/$old/content"
+  fi
+  echo "$old" > course-material/active
+  echo "Moved your course progress into course-material/$old/."
+  [ "$slug" = "$old" ] || echo "This folder's course is $old; finish or switch before starting $slug."
+  exit 0
+fi
+# 2. The course's content, copied once.
+dst="course-material/$slug/content"
+if [ ! -f "$dst/course.md" ]; then
+  srcdir=""
+  reg="$HOME/.learnwithdawn/courses/$slug"
+  [ -f "$reg" ] && srcdir="$(head -1 "$reg")"
+  [ -f "$srcdir/course.md" ] || srcdir="$root/legacy/$slug"
+  if [ ! -f "$srcdir/course.md" ]; then
+    echo "Not found: the course $slug isn't installed. Nothing was changed."
+    exit 4
+  fi
+  mkdir -p "course-material/$slug"
+  cp -R "$srcdir" "$dst"
+  echo "Copied the course $slug ($(sed -n 's/^version: //p' "$dst/VERSION")) into course-material/$slug/."
+fi
+# 3. This folder's course.
+echo "$slug" > course-material/active
+# 4. The workspace, once per course.
+cdir="course-material/$slug"
+src="$dst/sample/files"
+if [ -f "$cdir/sample-copied" ]; then
+  echo "The course was already set up here on $(cat "$cdir/sample-copied")."
   exit 0
 fi
 # The sample files go in their own folder, sample/, apart from what the learner builds
@@ -41,7 +86,7 @@ done
 # The course's scaffold, if it has one: files the course sets up in the workspace as requirements
 # (for example a pattern's folder structure, its CLAUDE.md and skills, its permission rules).
 # Copied into the workspace itself, keeping their folders, never over a file that's already there.
-scaffold="$root/content/scaffold"
+scaffold="$dst/scaffold"
 built=0; kept=0
 if [ -d "$scaffold" ]; then
   while IFS= read -r -d '' f; do
@@ -98,7 +143,7 @@ fi
 # can see and open their commands (Martin, 2026-11-16).
 mkdir -p .claude/skills
 [ -e skills ] || ln -s .claude/skills skills
-date "+%Y-%m-%d" > course-material/sample-copied
+date "+%Y-%m-%d" > "$cdir/sample-copied"
 note=""; [ "$skipped" -gt 0 ] && note=" (kept $skipped existing)"
 if [ -d "$src" ]; then echo "Copied $copied sample files into $(pwd)/sample$note."; else echo "Workspace set up (this course has no sample files)."; fi
 if [ -d "$scaffold" ]; then

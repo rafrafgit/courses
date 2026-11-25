@@ -1,12 +1,19 @@
 {
   "name": "courses",
-  "owner": { "name": "Martin" },
-  "description": "Courses where you learn AI-native work by doing it with Claude Code on your own business.",
+  "owner": {
+    "name": "Martin"
+  },
+  "description": "Courses where you learn AI-native work by doing it with Claude Code on your own work, taught by Dawn.",
   "plugins": [
     {
       "name": "dawn",
       "source": "./plugins/dawn",
-      "description": "Build a company brain for your business: set up the folder where your business's knowledge lives, so Claude Code knows your business without you explaining it."
+      "description": "Dawn, your mentor in Claude Code: teaches a course step by step on your own work, checks each step, and has your work reviewed. Install a course to start; Dawn comes with it."
+    },
+    {
+      "name": "build-company-brain",
+      "source": "./plugins/build-company-brain",
+      "description": "Build a company brain for your business. Set up the folder where your business's knowledge lives, so Claude Code knows your business without you explaining it. A course taught by Dawn, your mentor in Claude Code."
     }
   ]
 }

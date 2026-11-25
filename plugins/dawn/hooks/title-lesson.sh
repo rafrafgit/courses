@@ -2,16 +2,18 @@
 # Names the lesson tab, so the learner can tell it from the work tab (SPEC, the runtime: hooks).
 # Runs on every prompt; acts only when the prompt is /dawn or /dawn:mentor. Sets the session
 # title, shown on the prompt bar, to "Lesson 2 of 3 · Dawn" (or "Final task · Dawn"). The lesson
-# is the one named in the command, or the one the learner is on in course-material/progress.md,
+# is the one named in the command, or the one the learner is on in the folder's course's progress,
 # chosen as the mentor chooses it. A title survives /clear; each lesson starts with /dawn:mentor,
 # so it's set again. Adds nothing to the conversation, never blocks.
 root="$1"
 input=$(cat | tr -d '\n')
 prompt=$(printf '%s' "$input" | sed -n 's/.*"prompt"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p')
 case "$prompt" in /dawn|/dawn\ *|/dawn:mentor|/dawn:mentor\ *) ;; *) exit 0 ;; esac
-cwd=$(printf '%s' "$input" | sed -n 's/.*"cwd"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p')
-index="$root/content/index.md"
-progress="$cwd/course-material/progress.md"
+cwd="${CLAUDE_PROJECT_DIR:-$(printf '%s' "$input" | sed -n 's/.*"cwd"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p')}"
+slug=$(cat "$cwd/course-material/active" 2>/dev/null)
+[ -n "$slug" ] || exit 0
+index="$cwd/course-material/$slug/content/index.md"
+progress="$cwd/course-material/$slug/progress.md"
 total=$(grep -cE '^\|[[:space:]]*[0-9]+[[:space:]]*\|' "$index" 2>/dev/null)
 [ -n "$total" ] && [ "$total" -gt 0 ] || exit 0
 

@@ -1,8 +1,8 @@
 {
   "name": "dawn",
   "displayName": "Dawn",
-  "version": "0.5.3",
-  "description": "Build a company brain for your business: set up the folder where your business's knowledge lives, so Claude Code knows your business without you explaining it.",
+  "version": "1.0.0",
+  "description": "Dawn, your mentor in Claude Code: teaches a course step by step on your own work, checks each step, and has your work reviewed. Install a course to start; Dawn comes with it.",
   "author": {
     "name": "Martin"
   }
