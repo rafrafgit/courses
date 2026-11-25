@@ -8,7 +8,7 @@
     {
       "name": "dawn",
       "source": "./plugins/dawn",
-      "description": "Dawn, your mentor in Claude Code: teaches a course step by step on your own work, checks each step, and has your work reviewed. Install a course to start; Dawn comes with it."
+      "description": "Dawn, your mentor in Claude Code. She comes with each course: add a course, not Dawn."
     },
     {
       "name": "build-company-brain",

@@ -1,7 +1,7 @@
 {
   "name": "build-company-brain",
   "displayName": "Build a company brain for your business",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Build a company brain for your business. Set up the folder where your business's knowledge lives, so Claude Code knows your business without you explaining it. A course taught by Dawn, your mentor in Claude Code.",
   "author": {
     "name": "Martin"
