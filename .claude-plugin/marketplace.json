@@ -14,6 +14,11 @@
       "name": "build-company-brain",
       "source": "./plugins/build-company-brain",
       "description": "Build a company brain for your business. Set up the folder where your business's knowledge lives, so Claude Code knows your business without you explaining it. A course taught by Dawn, your mentor in Claude Code."
+    },
+    {
+      "name": "build-design-brain",
+      "source": "./plugins/build-design-brain",
+      "description": "Build a design brain for your product. A course taught by Dawn, your mentor in Claude Code."
     }
   ]
 }

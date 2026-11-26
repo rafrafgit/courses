@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "ask": [
+      "Edit(/CLAUDE.md)",
+      "Edit(/product.md)",
+      "Edit(/users.md)",
+      "Edit(/design-system/DESIGN.md)",
+      "Edit(/research/insights.md)",
+      "Edit(/decisions/**)",
+      "Edit(/archive/**)",
+      "Edit(/.claude/skills/**)",
+      "Edit(/.claude/settings.json)"
+    ]
+  }
+}

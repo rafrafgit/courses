@@ -3,7 +3,7 @@
 # Prints, one per line:
 #   active: <slug>                          the course this folder is on (course-material/active)
 #   started: <slug> | <title> | <status>    each course started here; status is "in progress" or "complete"
-#   installed: <slug> | <title> | <version> each course plugin installed (it registers itself)
+#   installed: <slug> | <title> | <version> each course plugin loaded now (it registers itself)
 #   legacy: <slug> | <title>                the course Dawn 1.x keeps for folders from before the split
 #   move: <slug>                            this folder has progress from before the split, to move over
 # Changes nothing. Run from the learner's folder.
@@ -21,6 +21,9 @@ done
 reg="$HOME/.learnwithdawn/courses"
 for f in "$reg"/*; do
   [ -f "$f" ] || continue
+  # A loaded course re-registers at each session start and each prompt; one not refreshed in the
+  # last 10 minutes was uninstalled or disabled (its hook no longer runs), so it isn't offered.
+  [ -n "$(find "$f" -mmin -10 2>/dev/null)" ] || continue
   c="$(head -1 "$f")"
   [ -f "$c/course.md" ] || continue
   echo "installed: $(basename "$f") | $(title "$c") | $(sed -n 's/^version: //p' "$c/VERSION")"

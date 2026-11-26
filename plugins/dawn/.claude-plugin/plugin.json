@@ -1,7 +1,7 @@
 {
   "name": "dawn",
   "displayName": "Dawn",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Dawn, your mentor in Claude Code. She comes with each course: add a course, not Dawn.",
   "author": {
     "name": "Martin"
